@@ -3323,7 +3323,7 @@ input, select, textarea {
 .price-table {
 	overflow: auto;
 	width: 100%;
-	font-size: 1rem;
+	font-size: 0.85rem;
 }
 
 .price-table table {

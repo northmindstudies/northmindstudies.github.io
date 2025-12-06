@@ -125,7 +125,7 @@
 			$titleBar = $(
 				'<div id="titleBar">' +
 					'<a href="#header" class="toggle"></a>' +
-					'<span class="title">' + $('#logo').html() + '</span>' +
+					'<span class="title">' + 'NS' + '</span>' + // $('#logo').html() between span tags
 				'</div>'
 			)
 				.appendTo($body);

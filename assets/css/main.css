@@ -3360,5 +3360,55 @@ mark {
 	background-color: #910101; /*#39c29d*/;
 }
 
+/** Reg Form **/
+.collapse {
+  height: 0;
+  overflow: hidden;
+  transition: height 300ms ease;
+}
+
+.register-btn {
+  cursor: pointer;
+  background: #0f1765;
+  color: #fff;
+  padding: 12px 18px;
+  border-radius: 8px;
+  border: 0;
+  font-weight: 700;
+}
+
+.register-form {
+  margin-top: 12px;
+  padding: 16px;
+  background: #f8f8f8;
+  border-radius: 8px;
+  display: grid;
+  gap: 10px;
+}
+
+#reg-btns {
+    display: block;
+    margin: 0 auto;
+}
+
+#reg-submit-btn {
+    width:70px;
+    
+    border: none;
+    border-radius: 6px;
+    padding: 5px 8px;
+    background-color: #0f1765;
+    color:#f8f8f8;
+}
+
+#clear-form-btn {
+    background-color: #c1c1c1;
+    color:#171717;
+    width:70px;
+    
+    border: none;
+    border-radius: 6px;
+    padding: 5px 8px;
+}
 
 

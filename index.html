@@ -14,6 +14,7 @@
   			gtag('js', new Date());
   			gtag('config', 'G-E7RRGC8R4W');
 		</script>
+		<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 		<title>Northmind Studies</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -182,8 +183,92 @@
 									<h4>We will update with more information about finances surrounding higher education.</h4>
 								</div>
 							</section>
+						
+						<!-- Registration -->
+							<section id="register">
+								<div class="container">
+									<h3 style="color: #910101">Register for a Session</h3>
+									<p>We are currently accepting students and offer flexible scheduling including weekends!</p>
+									
+									<button id="registerToggle" class="register-btn" aria-expanded="false" aria-controls="registerPanel">
+										Get Started
+									</button>
 
-						<!-- Four -->
+									<div id="registerPanel" class="collapse" role="region" aria-label="Registration form">
+										<form class="register-form" method="post" action="https://api.web3forms.com/submit">
+										<input type="hidden" name="access_key" value="3434399c-5481-4d90-a9c2-31c0cfb5d8cf">
+											<label>
+												Student Full Name* <input type="text" required />
+											</label>
+											
+											<label for="academic-yr">Student Academic Year*</label>
+												<select id="class" name="class">
+													<option value="8th-grade">8th Grade</option>
+													<option value="9th-grade">9th Grade</option>
+													<option value="10th-grade">10th Grade</option>
+													<option value="11th-grade">11th Grade</option>
+													<option value="12th-grade">12th Grade</option>
+													<option value="College-fresh">College Freshman/1st-year</option>
+													<option value="College-soph">College Sophore/2nd-year</option>
+													<option value="College-junior">College Junior/3rd-year</option>
+													<option value="College-senior">College Senior/4th-year</option>
+													<option value="Other">Not listed/Other</option>
+												</select>
+
+											<label>Student School/Academic Institution* <input type="text" required />
+											</label>
+
+											<label>Subject*
+												<select id="subject" name="subject" required>
+													<option value="">Select…</option>
+													<option value="math">Math</option>
+													<option value="physics">Physics</option>
+													<option value="compsci">Computer Science</option>
+													<option value="essay">College Admissions Essay</option>
+												</select>
+											</label>
+
+											<label>Topic*
+												<select id="topic" name="topic" required disabled>
+													<option value="">Select a subject first…</option>
+												</select>
+											</label>
+
+
+											<label>Parent Full Name* <input type="text" placeholder="Enter 'Self' if > 18 years old" required/>
+											</label>
+
+											<label>Parent Email* <input type="email" required />
+											</label>
+
+											<label>Parent Phone Number* <input type="text" required />
+											</label>
+
+											<label>City/State of Residence* <input type="text" required />
+											</label>
+
+											<label for="pref-comms">Preferred communication method*</label>
+												<select id="pref-comms" name="pref-comm">
+													<option value="any">Any</option>
+													<option value="email">Email</option>
+													<option value="call">Call</option>
+													<option value="test">Text messaging</option>
+												</select>
+											
+											<label>Primary aim of tutoring <input type="text" placeholder="cram/understanding/SAT-ACT prep/etc"/>
+											</label>
+
+											<div class="h-captcha" data-captcha="true"></div>
+											<div id="reg-btns">
+												<button id="reg-submit-btn" type="submit">Submit</button>
+												<button id="clear-form-btn" type="reset">Clear</button>
+											</div>
+										</form>
+									</div>
+								</div>
+							</section>
+
+						<!-- General Contact Us -->
 							<section id="contact">
 								<div class="container">
 									<h3 style="color: #910101">Contact Us</h3>
@@ -191,6 +276,7 @@
 									<h5 style="color: #0f1765">  <a href="mailto:northmindstudies@gmail.com"><i class="fa-regular fa-envelope"></i> northmindstudies@gmail.com</a></h5>
 									<h5 style="color: #910101"><i class="fa-solid fa-phone"></i>    <a href="tel:+16106389442">610-638-9442</a></h5>
 									<p>Or use the form below!</p>
+
 									<form id="contactus-nms" method="post" action="https://api.web3forms.com/submit">
 										<div class="h-captcha" data-captcha="true"></div>
 										<input type="hidden" name="access_key" value="3434399c-5481-4d90-a9c2-31c0cfb5d8cf">
@@ -207,6 +293,7 @@
 											</div>
 										</div>
 									</form>
+
 								</div>
 							</section>
 
@@ -245,13 +332,13 @@
 										<h5>Preformatted</h5>
 										<pre><code>i = 0;
 
-while (!deck.isInOrder()) {
-    print 'Iteration ' + i;
-    deck.shuffle();
-    i++;
-}
+										while (!deck.isInOrder()) {
+											print 'Iteration ' + i;
+											deck.shuffle();
+											i++;
+										}
 
-print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
+										print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 									</section>
 
 									<section>
@@ -555,6 +642,9 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 
 			</div>
 
+
+        
+
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
@@ -564,20 +654,8 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script src="https://web3forms.com/client/script.js" async defer></script>
-			<script>
-				const form = document.getElementById('contactus-nms');
-
-				form.addEventListener('submit', function(e) {
-
-					const hCaptcha = form.querySelector('textarea[name=h-captcha-response]').value;
-
-					if (!hCaptcha) {
-						e.preventDefault();
-						alert("Please fill out captcha field")
-						return
-					}
-				});
-			</script>
+			<script src="assets/js/contactus.js"></script>
+			<script src="assets/js/regform.js"></script>
 	</body>
 
 </html>

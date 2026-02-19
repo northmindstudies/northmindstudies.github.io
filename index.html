@@ -23,38 +23,39 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
 	</head>
 	<body class="is-preload">
 
 		<!-- Header -->
-			<section id="header">
-				<header>
-					<!--span class="image avatar"><img src="images/avatar.jpg" alt="" /></span-->
-					<span class="image avatar"><img src="images/colored-logo.png" alt="" /></span>
-					<!--h1 id="logo"><a href="#">Northmind Studies</a></h1-->
+			<!-- Header -->
+			<section id="header0">
+				<a href="index.html"><img src="images/full_logo_transparent_square.png" alt="Northmind Studies compass logo" /></a>
+				<!--img src="images/colored-logo.png" alt="" /-->
+				<!--header>
+					<img src="images/colored-logo.png" alt="" />
 					<h5><em>Virtual tutoring worldwide, in-person tutoring for Delawareans</em></h5>
-				</header>
-				<nav id="nav">
+			</header-->
+
+				<nav id="nav0">
 					<ul>
-						<li><a href="#intro" class="active">Introduction</a></li>
-						<li><a href="#services">Services</a></li>
-						<li><a href="#pricing">Pricing</a></li>
-						<li><a href="#scholarships">Scholarship Lists</a></li>
-						<li><a href="#consultation">Consultation</a></li>
+						<li><a href="#intro" class="nav-a">Introduction</a></li>
+						<li><a href="#services" class="nav-a">Services</a></li>
+						<li><a href="#pricing" class="nav-a">Pricing</a></li>
+						<li><a href="#scholarships" class="nav-a">Scholarships</a></li>
+						<li><a href="#consultation" class="nav-a">Consultation</a></li>
 					</ul>
 				</nav>
-				<footer>
-					<ul class="icons">
-						<!--li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li-->
+
+				<!--footer>
+					<ul class="icons0">
 						<li><a href="https://www.instagram.com/northmindstudies/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 						<li><a href="https://www.facebook.com/northmindstudies0" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 						<li><a href="https://www.linkedin.com/company/northmind-studies" class="fa-brands fa-linkedin"><span class="label"></span></a></li>
 						<li><a href="mailto:info.northmindstudies@gmail.com" class="fa-regular fa-envelope"><span class="label"></span></a></li>
 						<li><a href="tel:+16106389442" class="fa-solid fa-phone"><span class="label"></span></a></li>
-						<!--li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li-->
-						<!--li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li-->
 					</ul>
-				</footer>
+				</footer-->
 			</section>
 
 		<!-- Wrapper -->
@@ -65,34 +66,78 @@
 
 						<!-- One -->
 							<section id="intro">
-								<div class="image main" data-position="center">
-									<!--img src="images/banner.jpg" alt="" /-->
-									<img src="images/transparent-logo.png" alt="logo">
-								</div>
-								<div class="container">
-									<header class="major">
-										<h3>Chase Excellence and Success Will Follow</h3>
-										<p><!--a href="http://html5up.net">HTML5 UP</a--></p>
-									</header>
-									<p>We offer 10+ years of experience including private tutoring, test prep, and college-level instruction which we use to adapt to your learning style. Whether you're catching up or getting ahead, we work to ensure understanding in your subjects to provide the tools you need to pursue your education confidently with full independence.</p>
+								<div class="container even">
+									<h3 id="super">Chase Excellence and Success Will Follow</h3>
+									<div id="intro-paragraph">
+										<!-- We offer 10+ years of experience including private tutoring, test prep, and college-level instruction which we use to adapt to your learning style. -->
+										<p>Whether you're catching up or getting ahead, we work to ensure understanding in your subjects to provide the tools you need to pursue your education confidently with full independence.</p>
+									</div>
 								</div>
 							</section>
 
 						<!-- Two -->
 							<section id="services">
-								<div class="container">
-									<h3 style="color: #0f1765">Services</h3>
-									<p>Here are a few of the subjects we can help with:</p>
-									<ul class="feature-icons">
-										<!--li class="icon solid fa-plus">Pre-Calculus</li-->
-										<li class="icon solid fa-infinity">Pre-Calculus, Calculus I, II & III</li>
-										<li class="icon solid fa-subscript">Linear Algebra</li>
-										<li class="icon solid fa-percent">Statistics</li>
-										<li class="icon solid fa-laptop-code">Computer Science</li>
-										<li class="icon solid fa-atom">Physics I & II</li>
-										<li class="icon solid fa-circle-notch">More to come!</li>
-									</ul>
-									<ul class="virtual-inperson">
+								<div class="container odd">
+									<h3>Services</h3>
+									<div id="service-intro">
+										<p>We primarily specialize in STEM subjects. Here are a few of the subjects we can help with:</p>
+									</div>
+									<div id="service-btns">
+										<div class="serv-btn">
+											<button id="services-toggle-math"
+													aria-expanded="false"
+													aria-controls="services-list-math">
+												Mathematics
+											</button>
+
+											<ul id="services-list-math">
+												<li><i class="fa-solid fa-cubes-stacked"></i> Pre-Calculus</li>
+												<li><i class="fa-solid fa-infinity"></i> Calc I/AB</li>
+												<li><i class="fa-solid fa-wave-square"></i> Calc II/BC</li>
+												<li><i class="fa-solid fa-subscript"></i> Calc III (Multivar.)</li>
+												<li><i class="fa-solid fa-table-cells"></i> Linear Algebra</li>
+												<li><i class="fa-solid fa-circle-notch"></i> Differential Eqs.</li>
+												<li><i class="fa-solid fa-percent"></i> Statistics</li>
+												<li><i class="fa-solid fa-square-root-variable"></i> Algebra I-II</li>
+											</ul>
+										</div>
+										
+										<div class="serv-btn">
+											<button id="services-toggle-phys"
+													aria-expanded="false"
+													aria-controls="services-list-phys">
+												Physics
+											</button>
+
+											<ul id="services-list-phys">
+												<li><i class="fa-solid fa-gear"></i> Physics I (Mechanics)</li>
+												<li><i class="fa-solid fa-bolt"></i> Physics II (Electro-Mag)</li>
+												<li><i class="fa-solid fa-plus-minus"></i> Algebra-/Calculus-based</li>
+												<li><i class="fa-solid fa-atom"></i> (In Dev): Modern Phys.</li>
+												<li><i class="fa-solid fa-flask"></i> (In Dev): Chemistry</li>
+											</ul>
+										</div>
+										
+										<div class="serv-btn">
+											<button id="services-toggle-cs"
+													aria-expanded="false"
+													aria-controls="services-list">
+												Computer Science
+											</button>
+
+											<ul id="services-list-cs">
+												<li><i class="fa-brands fa-python"></i> Intro Python</li>
+												<li><i class="fa-solid fa-network-wired"></i> Intro to Data Sci.</li>
+												<li><i class="fa-solid fa-laptop-code"></i> AP Computer Sci.</li>
+												<li><i class="fa-solid fa-microchip"></i> (In Dev): DSA</li>
+												<li><i class="fa-brands fa-java"></i> (In Dev): Intro Java</li>
+											</ul>
+										</div>
+										
+									</div>
+
+									<ul id="extra-service-details">
+										<li>For English/History/etc., we will work to find you the proper resources and connect you with the right people.</li>
 										<li>Virtual instruction available for all students worldwide.</li>
 										<li>In-person instruction currently only for residents of New Castle County (North) Delaware.</li>
 									</ul>
@@ -102,8 +147,8 @@
 
 						<!-- Three -->
 							<section id="pricing">
-								<div class="container">
-									<h3 style="color: #910101">Pricing</h3>
+								<div class="container even">
+									<h3>Pricing</h3>
 									<!--- p>Straightforward pricing</p -->
 									<!-- h4>Limited Time Offer: $5/hour discount for every new client referred, up to a maximum of $20/hour off.</h4 -->
 									<div class="price-table" role="region" tabindex="0">
@@ -135,9 +180,9 @@
 												</tbody>
 											</table>
 									</div>
-									<ul class="group-tutoring">
+									<ul>
 										<li>We offer group tutoring (2-4 students) for which the fees above are split among the participants evenly.</li>
-											<ul class="group-tutoring example">
+											<ul>
 												<li>For example, three students participating virtually 2+ hours a week will each contribute $20/hour.</li>
 												<li>Rates adjust for groups larger than 4 students, with a maximum of 8 students allowed per session.</li>
 											</ul>
@@ -147,8 +192,8 @@
 						
 						<!-- Scholarships -->
 						<section id="scholarships">
-								<div class="container">
-									<h3 style="color: #0f1765">Scholarship Lists</h3>
+								<div class="container odd">
+									<h3>Scholarship Lists</h3>
 									<p>Check your eligibility for the following scholarships, published by the <a href="https://educationdata.org/">Education Data Initiative</a>.</p>
 									<ul>
 										<li><mark style="color: white;">(Outdated, EDI may update soon)</mark> <a href="https://educationdata.org/scholarships-for-high-school-seniors">Scholarships for High School Seniors</a></li>
@@ -157,15 +202,15 @@
 										<li><mark style="color: white;">(Outdated, EDI may update soon)</mark> <a href="https://educationdata.org/scholarships-for-graduate-students">Scholarships for Grad Students</a></li>
 									</ul>
 									<!-- FINANCES for College -->
-									<h4>Coming Soon: More information about finances surrounding higher education.</h4>
+									<p>Coming Soon: More information about finances surrounding higher education.</p>
 								</div>
 							</section>
 						
 
 						<!-- Consultation -->
-							<section id="consultation"></section>
-									<div class="container">
-										<h3 id="consult-header" style="color: #910101">Book a Free Consultation</h3>
+							<section id="consultation">
+									<div class="container even">
+										<h3 id="consult-header">Book a Free Consultation</h3>
 										<p>Select a date/time, fill out a few basic questions and we will be on our way!</p>
 										<!-- Calendly inline widget begin -->
 										<div class="calendly-inline-widget" 
@@ -184,6 +229,13 @@
 							<p class="contact" id="email">info.northmindstudies@gmail.com</p>
 							<p class="contact" id="phone">610-638-9442</p>
 						</div>
+						<ul class="icons">
+							<li><a href="https://www.instagram.com/northmindstudies/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="https://www.facebook.com/northmindstudies0" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="https://www.linkedin.com/company/northmind-studies" class="fa-brands fa-linkedin"><span class="label"></span></a></li>
+							<li><a href="mailto:info.northmindstudies@gmail.com" class="fa-regular fa-envelope"><span class="label"></span></a></li>
+							<li><a href="tel:+16106389442" class="fa-solid fa-phone"><span class="label"></span></a></li>
+						</ul>
 						<div>
 							<ul class="copyright">
 								<li>&copy; Northmind Studies 2025. All rights reserved.</li>
@@ -206,6 +258,7 @@
 			<script src="assets/js/main.js"></script>
 			<script src="https://web3forms.com/client/script.js" async defer></script>
 			<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+			<script src="assets/js/services-btn.js"></script>
 			<!--script src="assets/js/contactus.js"></script-->
 			<!--script src="assets/js/regform.js"></script-->
 			<!--script src="https://assets.calendly.com/assets/external/widget.js" async></script-->

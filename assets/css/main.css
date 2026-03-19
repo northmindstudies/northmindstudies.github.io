@@ -4,9 +4,18 @@
 
 body {
     font-family: "Libre Baskerville", serif;
-    background-color: #fffefa;
-    color: #121212;
+    background-color: #eeeeee; /* Pref: #eeeeee */
+    color: #313131; /* #3c3c3c */
 
+}
+
+hr {
+    max-width: 80%;
+    border:solid #b5b5b5 1px;
+}
+
+.content-section {
+    margin: 30px;
 }
 
 #header0 {
@@ -66,15 +75,15 @@ body {
 #main > section > .container > h3 {
     color: #910101;
     display: block;
-    width: 200px;
+    /*width: 250px;*/
     margin: 0 auto 0.5em auto;
     text-align: center;
-    font-size: larger;
+    font-size: 1.8em;
 }
 
-#main > section > .container >  #super {
+#main > section > .container > #super {
     width: fit-content;
-    font-size: 2em;
+    font-size: 2.25em;
 }
 
 #main > section > .container > #consult-header {
@@ -91,7 +100,7 @@ ul {
     */
 
 .odd {
-    background-color: #f4e6e6;
+    background-color: #eeeeee; /*#f4e6e6;*/
 }
 
 #main > section > .container.odd > h3 {
@@ -123,6 +132,10 @@ p {
 }
 
 /* Services */
+/*#services > .container > #services-header {
+    font-size: 1.5em;
+}*/
+
 #service-intro {
     display: block;
     width:fit-content;
@@ -142,11 +155,15 @@ p {
     margin: 0 15px 10px 15px;
 }
 
+.service-items > li {
+    margin: 8px;
+}
+
 /* Math service Button */
 
 
 
-#services-toggle-math {
+#services-toggle-subjects {
   background-color: var(--brand-primary);
   color: white;
   border: none;
@@ -159,12 +176,12 @@ p {
   margin: 0 auto;
 }
 
-#services-toggle-math:hover {
+#services-toggle-subjects:hover {
   background-color: var(--brand-accent);
 }
 
 /* hidden by default */
-#services-list-math {
+#services-list-subjects {
   list-style: disc;
   padding-left: 1.25rem;
 
@@ -180,19 +197,15 @@ p {
 }
 
 /* visible state */
-#services-list-math.open {
+#services-list-subjects.open {
   max-height: 500px; /* large enough to fit content */
 }
-
-
 
 
 /* Physics Service Button */
 
 
-
-
-#services-toggle-phys {
+#services-toggle-instr {
   background-color: var(--brand-primary);
   color: white;
   border: none;
@@ -205,12 +218,12 @@ p {
   margin: 0 auto;
 }
 
-#services-toggle-phys:hover {
+#services-toggle-instr:hover {
   background-color: var(--brand-accent);
 }
 
 /* hidden by default */
-#services-list-phys {
+#services-list-instr {
   list-style: disc;
   padding-left: 1.25rem;
 
@@ -226,17 +239,15 @@ p {
 }
 
 /* visible state */
-#services-list-phys.open {
+#services-list-instr.open {
   max-height: 500px; /* large enough to fit content */
 }
-
-
 
 
 /* CS Service Button */
 
 
-#services-toggle-cs {
+#services-toggle-college-prep {
   background-color: var(--brand-primary);
   color: white;
   border: none;
@@ -249,12 +260,12 @@ p {
   margin: 0 auto;
 }
 
-#services-toggle-cs:hover {
+#services-toggle-college-prep:hover {
   background-color: var(--brand-accent);
 }
 
 /* hidden by default */
-#services-list-cs {
+#services-list-college-prep {
   list-style: disc;
   padding-left: 1.25rem;
 
@@ -270,7 +281,7 @@ p {
 }
 
 /* visible state */
-#services-list-cs.open {
+#services-list-college-prep.open {
   max-height: 500px; /* large enough to fit content */
 }
 
@@ -292,6 +303,96 @@ li > i {
     margin: 0 20px 0 0;
     width: 8px
 }
+
+
+
+
+
+
+/* --- ALTERNATIVE: Full Service Display --- */
+
+#open-services {
+    display: flex;
+    width:fit-content;
+    margin: 40px auto 0 auto;
+}
+
+#open-services > .service-listing > ul {
+    list-style-type: none;
+    display:block;
+    width:fit-content;
+    margin: 10px auto 100px auto;
+    padding: 0;
+}
+
+#open-services > .service-listing > ul > li {
+    margin: 0 0 10px 0;
+}
+
+.service-listing > h4 {
+    display: block;
+    width:max-content;
+    margin: 25px auto;
+    font-size: 1.2em;
+    font-weight: 900;
+    color: #242424;
+}
+
+.service-listing > img {
+    object-fit: contain;
+    height: auto;
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+.service-listing > .learn-more > button {
+    display: block;
+    width:max-content;
+    margin: 0px auto;
+    padding: 8px 24px;
+    font-size: 1.05em;
+    color:#eeeeee;
+    background-color: #0f1765;
+    border: solid #1e32e0 4px;
+    border-radius: 12px;
+    font-family: inherit;
+}
+
+.service-listing {
+    position: relative;
+}
+
+.learn-more {
+    position: absolute;
+    bottom: 0;
+    left:10%;
+    right:10%;
+    margin: 0 0 10px 0;
+}
+
+#subjects-listing {
+    margin: 0 100px 0px 0;   
+}
+
+    #subjects-listing > .learn-more > button {
+        border: solid #5e0202;
+        background-color: #910101;
+        color:#eeeeee;
+    }
+
+#college-prep-listing {
+    margin: 0 0 0px 100px;
+}
+
+    #college-prep-listing > .learn-more > button {
+            border: solid #5e0202;
+            background-color: #910101;
+            color:#eeeeee;
+        }
+
+
+
+
 
 
 
@@ -345,3 +446,5 @@ li > i {
     margin:10px auto;
     text-align: center;
 }
+
+

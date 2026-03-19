@@ -65,7 +65,7 @@
 					<div id="main">
 
 						<!-- One -->
-							<section id="intro">
+							<section class="content-section" id="intro">
 								<div class="container even">
 									<h3 id="super">Chase Excellence and Success Will Follow</h3>
 									<div id="intro-paragraph">
@@ -74,77 +74,62 @@
 									</div>
 								</div>
 							</section>
-
+							<hr>
 						<!-- Two -->
-							<section id="services">
+							<section class="content-section" id="services">
 								<div class="container odd">
-									<h3>Services</h3>
+									<h3 id="services-header">Services</h3>
 									<div id="service-intro">
 										<p>We primarily specialize in tutoring STEM subjects and offer other services to support your student!</p>
 									</div>
-
-									<div id="service-btns">
-										<div class="serv-btn">
-											<button id="services-toggle-math"
-													aria-expanded="false"
-													aria-controls="services-list-math">
-												Mathematics
-											</button>
-
-											<ul id="services-list-math">
-												<li><i class="fa-solid fa-cubes-stacked"></i> Pre-Calculus</li>
-												<li><i class="fa-solid fa-infinity"></i> Calc I/AB</li>
-												<li><i class="fa-solid fa-wave-square"></i> Calc II/BC</li>
-												<li><i class="fa-solid fa-subscript"></i> Calc III (Multivar.)</li>
-												<li><i class="fa-solid fa-table-cells"></i> Linear Algebra</li>
-												<li><i class="fa-solid fa-circle-notch"></i> Differential Eqs.</li>
-												<li><i class="fa-solid fa-percent"></i> Statistics</li>
-												<li><i class="fa-solid fa-square-root-variable"></i> Algebra I-II</li>
+									<div id="open-services">
+										<div class="service-listing" id="subjects-listing">
+											<img src="images/stem_square.jpg">
+											<h4>Subjects</h4>
+											<ul>
+												<li><i class="fa-solid fa-infinity"></i>Mathematics</li>
+												<li><i class="fa-solid fa-atom"></i>Physics</li>
+												<li><i class="fa-solid fa-laptop-code"></i>Computer Science</li>
 											</ul>
+											<div class="learn-more">
+												<!--p>Learn More</p-->
+												<button>Learn More</button>
+											</div>
 										</div>
-										
-										<div class="serv-btn">
-											<button id="services-toggle-phys"
-													aria-expanded="false"
-													aria-controls="services-list-phys">
-												Physics
-											</button>
 
-											<ul id="services-list-phys">
-												<li><i class="fa-solid fa-gear"></i> Physics I (Mechanics)</li>
-												<li><i class="fa-solid fa-bolt"></i> Physics II (Electro-Mag)</li>
-												<li><i class="fa-solid fa-plus-minus"></i> Algebra-/Calculus-based</li>
-												<li><i class="fa-solid fa-atom"></i> (In Dev): Modern Phys.</li>
-												<li><i class="fa-solid fa-flask"></i> (In Dev): Chemistry</li>
+										<div class="service-listing">
+											<img src="images/study_square.jpg">
+											<h4>Instruction</h4>
+											<ul>
+												<li><i class="fa-solid fa-earth-americas"></i>Virtual Worldwide</li>
+												<li><i class="fa-solid fa-user-graduate"></i>In-Person in Delaware</li>
+												<li><i class="fa-solid fa-calendar-check"></i>Regular Check-ins</li>
+												<li><i class="fa-solid fa-book-open"></i>Study Material Design</li>
 											</ul>
+											<div class="learn-more">
+												<!--p>Learn More</p-->
+												<button>Learn More</button>
+											</div>
 										</div>
-										
-										<div class="serv-btn">
-											<button id="services-toggle-cs"
-													aria-expanded="false"
-													aria-controls="services-list">
-												Computer Science
-											</button>
 
-											<ul id="services-list-cs">
-												<li><i class="fa-brands fa-python"></i> Intro Python</li>
-												<li><i class="fa-solid fa-network-wired"></i> Intro to Data Sci.</li>
-												<li><i class="fa-solid fa-laptop-code"></i> AP Computer Sci.</li>
-												<li><i class="fa-solid fa-microchip"></i> (In Dev): DSA</li>
-												<li><i class="fa-brands fa-java"></i> (In Dev): Intro Java</li>
+										<div class="service-listing" id="college-prep-listing">
+											<img src="images/grad_square.jpg">
+											<h4>College Prep</h4>
+											<ul>
+												<li><i class="fa-solid fa-book"></i>AP Exam Prep</li>
+												<li><i class="fa-solid fa-graduation-cap"></i>SAT/ACT</li>
+												<li><i class="fa-solid fa-pen"></i>Essay Consultations</li>
 											</ul>
+											<div class="learn-more">
+												<!--p>Learn More</p-->
+												<button>Learn More</button>
+											</div>
 										</div>
-										
 									</div>
-
-									<ul id="extra-service-details">
-										<li>For English/History/etc., we will work to find you the proper resources and connect you with the right people.</li>
-										<li>Virtual instruction available for all students worldwide.</li>
-										<li>In-person instruction currently only for residents of New Castle County (North) Delaware.</li>
-									</ul>
 								</div>
+								
 							</section>
-
+							<hr>
 						<!-- Three -->
 							<section id="pricing">
 								<div class="container even">
@@ -214,9 +199,9 @@
 									</ul>
 								</div>
 							</section>
-						
+						<hr>
 						<!-- Scholarships -->
-						<section id="scholarships">
+							<section id="scholarships">
 								<div class="container odd">
 									<h3>Scholarship Lists</h3>
 									<p>Check your eligibility for the following scholarships, published by the <a href="https://educationdata.org/">Education Data Initiative</a>.</p>
@@ -230,7 +215,7 @@
 									<p>Coming Soon: More information about finances surrounding higher education.</p>
 								</div>
 							</section>
-						
+						<hr>
 
 						<!-- Consultation -->
 							<section id="consultation">
@@ -284,6 +269,7 @@
 			<script src="https://web3forms.com/client/script.js" async defer></script>
 			<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 			<script src="assets/js/services-btn.js"></script>
+			
 			<!--script src="assets/js/contactus.js"></script-->
 			<!--script src="assets/js/regform.js"></script-->
 			<!--script src="https://assets.calendly.com/assets/external/widget.js" async></script-->

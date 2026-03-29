@@ -6,7 +6,6 @@ body {
     font-family: "Libre Baskerville", serif;
     background-color: #eeeeee; /* Pref: #eeeeee */
     color: #313131; /* #3c3c3c */
-
 }
 
 hr {
@@ -59,7 +58,6 @@ hr {
     transition: color 150ms ease;
     align-items: center;
     font-weight: 900;
-   
 }
 
 #nav0 a.nav-a:hover,
@@ -341,8 +339,14 @@ li > i {
 .service-listing > img {
     object-fit: contain;
     height: auto;
-    max-width: 250px;
+    width: 250px;
     border-radius: 10px;
+    transition: transform 0.14s ease, outline 0.14s ease;
+}
+
+.service-listing > img:hover {
+    transform: scale(1.05);
+    outline: 3px solid #910101;
 }
 
 .service-listing > .learn-more > button {
@@ -356,6 +360,11 @@ li > i {
     border: solid #1e32e0 4px;
     border-radius: 12px;
     font-family: inherit;
+    transition: transform 0.14s ease;
+}
+
+.service-listing > .learn-more > button:hover {
+    transform: scale(1.10);
 }
 
 .service-listing {

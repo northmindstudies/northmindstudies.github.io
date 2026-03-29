@@ -413,7 +413,7 @@ li > i {
 #pricing-tiers {
     display: flex;
     width: 100%;
-    max-width:900px;
+    max-width:1000px;
     margin: 20px auto;
 }
 
@@ -463,6 +463,10 @@ li > i {
 
 #custom-study-tier {
     background-color: #eddef8;
+}
+
+#quick-hw-help-tier {
+    background-color: #d8fbfa;
 }
 
 .cost-val-div{

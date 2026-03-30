@@ -281,12 +281,15 @@
 										</div-->
 
 									<div class="pricing-learn">
+
 										<div class="pricing-learn-button">
 											<button id="group-rate-learn">Group Rates</button>
 										</div>
+
 										<div class="pricing-learn-button">
 											<button id="nontrad-learn">Small Services</button>
 										</div>
+
 									</div>
 
 									<!--ul>
@@ -302,16 +305,111 @@
 						<!-- Scholarships -->
 							<section class="content-section" id="scholarships">
 								<div class="container odd">
-									<h3>Scholarship Lists</h3>
-									<p>Check your eligibility for the following scholarships, published by the <a href="https://educationdata.org/">Education Data Initiative</a>.</p>
-									<ul>
-										<li><mark style="color: white;">(Outdated, EDI may update soon)</mark> <a href="https://educationdata.org/scholarships-for-high-school-seniors">Scholarships for High School Seniors</a></li>
-										<li><a href="https://educationdata.org/scholarships-for-college-freshman">2026 Scholarships College Freshman</a></li>
-										<li><a href="https://educationdata.org/no-essay-scholarships">2026 General No-Essay Scholarships</a></li>
-										<li><mark style="color: white;">(Outdated, EDI may update soon)</mark> <a href="https://educationdata.org/scholarships-for-graduate-students">Scholarships for Grad Students</a></li>
-									</ul>
-									<!-- FINANCES for College -->
-									<p>Coming Soon: More information about finances surrounding higher education.</p>
+									
+									<h3>Education Finances</h3>
+									<div id="scholarship-content"></div>
+
+										<div>
+											<h4>Scholarships</h4>
+											<p>Check your eligibility for the following scholarships, published by the <a href="https://educationdata.org/">Education Data Initiative</a>.</p>
+
+											<ul>
+
+												<li><mark style="color: white;">(Outdated, EDI may update soon)</mark> <a href="https://educationdata.org/scholarships-for-high-school-seniors">Scholarships for High School Seniors</a></li>
+
+												<li><a href="https://educationdata.org/scholarships-for-college-freshman">2026 Scholarships College Freshman</a></li>
+
+												<li><a href="https://educationdata.org/no-essay-scholarships">2026 General No-Essay Scholarships</a></li>
+
+												<li><mark style="color: white;">(Outdated, EDI may update soon)</mark> <a href="https://educationdata.org/scholarships-for-graduate-students">Scholarships for Grad Students</a></li>
+
+											</ul>
+										</div>
+
+										<!--div>
+											<h4>Saving</h4>
+											<p>Wouldn't it be nice if the money you save for your child's education grew like a 401k? Well it can with a 529 plan!</p>
+
+											<p>Select your state from the drop-down, then click submit to learn more.</p>
+
+											<div class="plan529-cap"></div>
+
+											<div class="plan529-content">
+												<h2 id="plan529-title">Find Your State’s 529 Plan</h2>
+												<p class="plan529-text">
+												Select your state to view official 529 plan information and compare next steps for saving toward education costs.
+												</p>
+
+												<div class="plan529-form">
+													<label for="state529" class="sr-only">Select your state</label>
+													<select id="state529" name="state529">
+														<option value="">Choose a state</option>
+														<option value="alabama">Alabama</option>
+														<option value="alaska">Alaska</option>
+														<option value="arizona">Arizona</option>
+														<option value="arkansas">Arkansas</option>
+														<option value="california">California</option>
+														<option value="colorado">Colorado</option>
+														<option value="connecticut">Connecticut</option>
+														<option value="delaware">Delaware</option>
+														<option value="district-of-columbia">District of Columbia</option>
+														<option value="florida">Florida</option>
+														<option value="georgia">Georgia</option>
+														<option value="hawaii">Hawaii</option>
+														<option value="idaho">Idaho</option>
+														<option value="illinois">Illinois</option>
+														<option value="indiana">Indiana</option>
+														<option value="iowa">Iowa</option>
+														<option value="kansas">Kansas</option>
+														<option value="kentucky">Kentucky</option>
+														<option value="louisiana">Louisiana</option>
+														<option value="maine">Maine</option>
+														<option value="maryland">Maryland</option>
+														<option value="massachusetts">Massachusetts</option>
+														<option value="michigan">Michigan</option>
+														<option value="minnesota">Minnesota</option>
+														<option value="mississippi">Mississippi</option>
+														<option value="missouri">Missouri</option>
+														<option value="montana">Montana</option>
+														<option value="nebraska">Nebraska</option>
+														<option value="nevada">Nevada</option>
+														<option value="new-hampshire">New Hampshire</option>
+														<option value="new-jersey">New Jersey</option>
+														<option value="new-mexico">New Mexico</option>
+														<option value="new-york">New York</option>
+														<option value="north-carolina">North Carolina</option>
+														<option value="north-dakota">North Dakota</option>
+														<option value="ohio">Ohio</option>
+														<option value="oklahoma">Oklahoma</option>
+														<option value="oregon">Oregon</option>
+														<option value="pennsylvania">Pennsylvania</option>
+														<option value="rhode-island">Rhode Island</option>
+														<option value="south-carolina">South Carolina</option>
+														<option value="south-dakota">South Dakota</option>
+														<option value="tennessee">Tennessee</option>
+														<option value="texas">Texas</option>
+														<option value="utah">Utah</option>
+														<option value="vermont">Vermont</option>
+														<option value="virginia">Virginia</option>
+														<option value="washington">Washington</option>
+														<option value="west-virginia">West Virginia</option>
+														<option value="wisconsin">Wisconsin</option>
+														<option value="wyoming">Wyoming</option>
+													</select>
+
+													<button type="button" id="go529Btn">View Plan</button>
+												</div>
+
+											<p class="plan529-note">
+											Many families consider their home-state plan first because some states may offer state tax benefits or other incentives.
+											</p>
+
+											<p class="plan529-disclaimer">
+											529 plans are tax-advantaged education savings plans. Benefits, fees, investment options, and eligibility rules vary by state. Review official plan information before investing.
+											</p>
+										</div-->
+
+									</div>
 								</div>
 							</section>
 						<hr>
@@ -365,6 +463,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/links529.js"></script>
 			<script src="https://web3forms.com/client/script.js" async defer></script>
 			<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 			<script src="assets/js/services-btn.js"></script>

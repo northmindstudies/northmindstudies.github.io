@@ -627,8 +627,37 @@ li > i {
     background-color: #eeeeee;
 }*/
 
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
 
 
+/* ------------------------------------------------- */
+/* ---------------- Scholarships ------------------- */
+/* ------------------------------------------------- */
 
 
+.state-529-finder {
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.state-529-finder select,
+.state-529-finder button {
+  padding: 0.8rem 1rem;
+  font: inherit;
+  border-radius: 0.75rem;
+  border: 1px solid #ccc;
+}
+
+.state-529-finder button {
+  cursor: pointer;
+}
+
+.helper-text {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
 

@@ -445,7 +445,9 @@ li > i {
     flex-direction: column;
     max-width: 300px;
     overflow: hidden;
-    transition: transform 0.14s ease, border-color 0.14s ease, font-weight 0.14s ease;
+    transition: transform 0.14s ease, 
+                border-color 0.14s ease, 
+                font-weight 0.14s ease;
     font-weight: 500;
 }
 
@@ -523,7 +525,7 @@ li > i {
 .tier-card > .tier-card-content > ul > li {
     margin: 10px 0 0 0px;
     padding: 0 15px 0 15px;
-    border-bottom: 1px solid #b5b5b5;
+    border-bottom: 1px solid #767676;
 }
 
 /* Is there any easier way to specify this...? */
@@ -568,6 +570,40 @@ li > i {
 .description > p {
     font-size: 0.9em;
 }
+
+.pricing-learn {
+    display: flex;
+    width: fit-content;
+    margin: 50px auto;
+    font-family: inherit;
+}
+
+.pricing-learn-button {
+    margin: 0 10px;
+}
+
+.pricing-learn-button > #group-rate-learn, #nontrad-learn {
+    background-color: #0f1765;
+    border: 3px #1e32e0 solid;
+    color: #eeeeee;
+    padding: 16px 32px;
+    font-weight: 600;
+    font-size: 1em;
+    font-family: "Lora", serif;
+    letter-spacing: 0.2pt;
+    border-radius: 10px;
+    transition: transform 0.14s ease, 
+                background-color 0.14s ease, 
+                border-color 0.14s ease;
+}
+
+#group-rate-learn:hover, #nontrad-learn:hover{
+    transform: scale(1.1);
+    background-color: #910101;
+    border-color: #5e0202;
+}
+
+
 
 /* Card color option #1
 #standard-tier {

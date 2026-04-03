@@ -1,0 +1,792 @@
+@import url("fontawesome-all.min.css");
+/* Header0 */
+
+
+body {
+    font-family: "Lora", serif; /*"Libre Baskerville", serif */
+    background-color: #eeeeee; /* Pref: #eeeeee */
+    color: #313131; /* #3c3c3c */
+}
+
+hr {
+    max-width: 80%;
+    border:solid #b5b5b5 1px;
+}
+
+.content-section {
+    margin: 30px;
+}
+
+#header0 {
+   display: flex;
+}
+
+    #header0 > nav {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+        margin: 0 auto;
+        font-weight: 700;
+        font-size: large;
+    }
+
+    #header0 > a > img {
+        width:200px;
+        border-radius:200px;
+    }
+
+    #header0 > nav > ul {
+        list-style-type: none;
+        display: flex;
+        align-items: center;
+        padding: 0;
+    }
+
+        #header0 > nav > ul > li {
+            height: 1.25em;
+            margin: 0 1.5em;
+            text-align: center;
+        }
+
+:root {
+  --brand-primary: #0f1765;  /* your maroon */
+  --brand-accent: #910101;  /* your navy */
+}
+
+#nav0 a.nav-a {
+    color: var(--brand-primary) !important; 
+    transition: color 150ms ease;
+    align-items: center;
+    font-weight: 900;
+}
+
+#nav0 a.nav-a:hover,
+#nav0 a.nav-a:focus-visible {
+  color: var(--brand-accent) !important;
+}
+
+.container {
+    margin: 10px 0 0 0;
+    
+}
+
+#main > section > .container > h3 {
+    color: #910101;
+    display: block;
+    /*width: 250px;*/
+    margin: 0 auto 0.5em auto;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+#main > section > .container > #super {
+    width: fit-content;
+    font-size: 2.25em;
+}
+
+#main > section > .container > #consult-header {
+    width: fit-content;
+}
+
+ul {
+    margin: 0;
+}
+
+/* .even {
+    background-color: #c9cfff;
+}
+    */
+
+.odd {
+    background-color: #eeeeee; /*#f4e6e6;*/
+}
+
+#main > section > .container.odd > h3 {
+    color: #0f1765;
+}
+
+#main > section > .container.even > h3 {
+    color: #910101;
+}
+
+a {
+    color: #009011;
+    text-decoration: none;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+    font-size: 11pt;
+}
+
+#intro-paragraph > p {
+    text-align: center;
+    display: block;
+    width: 100%;
+    max-width:800px;
+    margin: 0 auto;
+    padding: 0 25px 0 25px;
+}
+
+/* ---------------------------------------------------- */
+/* ---------------------- Services -------------------- */
+/* ---------------------------------------------------- */
+
+
+#service-intro {
+    display: block;
+    width:fit-content;
+    margin: 10px auto;
+}
+
+
+/* Services Btn */
+
+#service-btns {
+    display: flex;
+    width: fit-content;
+    margin: 20px auto;
+}
+
+.serv-btn {
+    margin: 0 15px 10px 15px;
+}
+
+.service-items > li {
+    margin: 8px;
+}
+
+/* --------------- Math service Button */
+
+
+
+#services-toggle-subjects {
+  background-color: var(--brand-primary);
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+}
+
+#services-toggle-subjects:hover {
+  background-color: var(--brand-accent);
+}
+
+/* hidden by default */
+#services-list-subjects {
+  list-style: disc;
+  padding-left: 1.25rem;
+
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 300ms ease;
+
+  display: block;
+  width: fit-content;
+  margin: 0.75rem auto 0 auto;
+
+  list-style-type: none;
+}
+
+/* visible state */
+#services-list-subjects.open {
+  max-height: 500px; /* large enough to fit content */
+}
+
+
+/* --------------- Physics Service Button */
+
+
+#services-toggle-instr {
+  background-color: var(--brand-primary);
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+}
+
+#services-toggle-instr:hover {
+  background-color: var(--brand-accent);
+}
+
+/* hidden by default */
+#services-list-instr {
+  list-style: disc;
+  padding-left: 1.25rem;
+
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 300ms ease;
+
+  display: block;
+  width: fit-content;
+  margin: 0.75rem auto 0 auto;
+
+  list-style-type: none;
+}
+
+/* visible state */
+#services-list-instr.open {
+  max-height: 500px; /* large enough to fit content */
+}
+
+
+/* --------------- CS Service Button */
+
+
+#services-toggle-college-prep {
+  background-color: var(--brand-primary);
+  color: white;
+  border: none;
+  padding: 0.6rem 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+}
+
+#services-toggle-college-prep:hover {
+  background-color: var(--brand-accent);
+}
+
+/* hidden by default */
+#services-list-college-prep {
+  list-style: disc;
+  padding-left: 1.25rem;
+
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 300ms ease;
+
+  display: block;
+  width: fit-content;
+  margin: 0.75rem auto 0 auto;
+
+  list-style-type: none;
+}
+
+/* visible state */
+#services-list-college-prep.open {
+  max-height: 500px; /* large enough to fit content */
+}
+
+
+#extra-service-details {
+    list-style-type: none;
+    display: block;
+    text-align: center;
+    width:100%;
+    max-width:600px;
+    margin: 0px auto;
+}
+
+#extra-service-details > li {
+    padding: 0 0 20px 0;
+}
+
+li > i {
+    margin: 0 20px 0 0;
+    width: 8px
+}
+
+
+
+
+
+/* ---------------------------------------------------------- */
+/* -------------- ALTERNATIVE: Full Service Display --------- */
+/* ---------------------------------------------------------- */
+
+
+#open-services {
+    display: flex;
+    width:fit-content;
+    margin: 40px auto 0 auto;
+}
+
+.service-listing {
+    /*border: 1px #242424 solid;
+    border-radius: 10px;*/
+    margin: 0 -50px;
+    position: relative;
+}
+
+#open-services > .service-listing > ul {
+    list-style-type: none;
+    display:block;
+    width:fit-content;
+    margin: 10px auto 100px auto;
+    padding: 0;
+    font-weight: 600;
+}
+
+#open-services > .service-listing > ul > li {
+    margin: 0 0 10px 0;
+}
+
+.service-listing > h4 {
+    display: block;
+    width:max-content;
+    margin: 25px auto;
+    font-size: 1.4em;
+    font-weight: 800;
+    color: #910101;/*#242424;*/
+}
+
+.service-listing > .service-desc {
+    width: 260px;
+    text-align: justify;
+    margin: 0 0 20px 0;
+    padding: 0 10px;
+}
+
+.service-listing > img {
+    object-fit: contain;
+    height: auto;
+    width: 280px;
+    border-radius: 10px;
+    transition: transform 0.14s ease, outline 0.14s ease;
+}
+
+.service-listing > img:hover {
+    transform: scale(1.05);
+    outline: 3px solid #910101;
+}
+
+.service-listing > .learn-more > button {
+    display: block;
+    width:max-content;
+    margin: 0px auto;
+    padding: 8px 24px;
+    font-size: 1.05em;
+    color:#f4f4f4;
+    background-color: #0f1765;
+    border: solid #1e32e0 4px;
+    border-radius: 12px;
+    font-family: inherit;
+    transition: transform 0.14s ease;
+}
+
+.service-listing > .learn-more > button:hover {
+    transform: scale(1.10);
+}
+
+.learn-more {
+    position: absolute;
+    bottom: 0;
+    left:10%;
+    right:10%;
+    margin: 0 0 10px 0;
+}
+
+#subjects-listing {
+    margin: 0 100px 0px 0;   
+}
+
+    #subjects-listing > .learn-more > button {
+        border: solid #5e0202;
+        background-color: #910101;
+        color:#eeeeee;
+    }
+
+#college-prep-listing {
+    margin: 0 0 0px 100px;
+}
+
+    #college-prep-listing > .learn-more > button {
+            border: solid #5e0202;
+            background-color: #910101;
+            color:#eeeeee;
+        }
+
+
+
+
+
+
+/* --------------------------------------------------------- */
+/* -------------------- Pricing Section -------------------- */
+/* --------------------------------------------------------- */
+
+#pricing-tiers {
+    display: flex;
+    width: max-content;
+    /*max-width:1000px;*/
+    margin: 20px auto;
+    /*font-family: "Menbere";*/
+}
+
+#pricing-tiers-nonstandard {
+    display: flex;
+    width: max-content;
+    /*max-width:1000px;*/
+    margin: 20px auto;
+}
+
+.tier-card {
+    border: 3px solid #0f1765;
+    border-radius: 10px;
+    margin: 0px 10px;
+    padding: 0;
+    display:flex;
+    flex-direction: column;
+    max-width: 300px;
+    overflow: hidden;
+    transition: transform 0.14s ease, 
+                border-color 0.14s ease, 
+                font-weight 0.14s ease;
+    font-weight: 500;
+}
+
+.tier-card:hover {
+    transform: scale(1.10);
+    border-color: #d7d7d7;
+    font-weight: 600;
+}
+
+.tier-card .tier-cap-fill,
+.tier-card .tier-card-content,
+.tier-card .cost-val-div {
+    transition: transform 0.2s ease, 
+        background-color 0.14s ease, 
+        color 0.14s ease,
+        font-weight 0.14s ease;
+}
+
+.tier-card:hover .tier-cap-fill {
+    background-color: #0f1765;
+    color:#eeeeee
+}
+
+.tier-card:hover .tier-card-content {
+    background-color: #910101;
+    color: #eeeeee;
+}
+
+.tier-card:hover .cost-val-div {
+    background-color:#0d6517;
+    color: #eeeeee;
+    transform: scale(1.1);
+    font-weight: 700;
+}
+
+.tier-cap-fill {
+    height: 10%; /* controls how much is filled */
+    width: 100%;
+    background-color: #bfc2dd; /*#dfe2f6*/
+    margin: 0px 0 0 0;
+    padding: 10px 0;
+    color:#292929;
+    transition: background-color 0.14s ease;
+}
+
+.tier-cap-fill:hover {
+    background-color:#0f1765;
+}
+
+.tier-category-txt {
+    text-align: center;
+    font-size: 1.15em;
+    font-weight: 500;
+    margin: 0 0 10px 0;
+}
+
+.tier-card-content {
+    height: 100%; /* controls how much is filled */
+    width: 100%;
+    background-color: #dab5b5; /*#ecd9d9*/
+    margin: 0px 0 0 0;
+    padding: 5px 0 5px 0;
+    font-size: 0.85em;
+    font-weight: 600;
+}
+
+
+
+
+.tier-card > .tier-card-content > ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.tier-card > .tier-card-content > ul > li {
+    margin: 10px 0 0 0px;
+    padding: 0 15px 0 15px;
+    border-bottom: 1px solid #767676;
+}
+
+/* Is there any easier way to specify this...? */
+.tier-card > .tier-card-content > ul > li#no-bottom-border {
+    border-bottom: none;
+}
+
+.tier-card > .tier-card-content > ul > ul {
+    list-style: none;
+    padding: 0 10px 0 30px;
+}
+
+.tier-card > .tier-card-content > ul > ul > li {
+    margin-top: 5px;
+}
+
+.cost-val-div{
+    margin: auto 0;
+    padding: 10px 0;
+    background-color: #eeeeee;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cost-val-text {
+    display: block;
+    width: fit-content;
+    margin: 0 auto 0px auto;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.35em;
+}
+
+.description {
+    background-color: #dedcdc;
+    padding: 10px 10px; 
+}
+
+.description > p {
+    font-size: 0.9em;
+}
+
+.pricing-learn {
+    display: flex;
+    width: fit-content;
+    margin: 50px auto;
+    font-family: inherit;
+}
+
+.pricing-learn-button {
+    margin: 0 10px;
+}
+
+.pricing-learn-button > #group-rate-learn, #nontrad-learn {
+    background-color: #0f1765;
+    border: 3px #1e32e0 solid;
+    color: #eeeeee;
+    padding: 16px 32px;
+    font-weight: 600;
+    font-size: 1em;
+    font-family: "Lora", serif;
+    letter-spacing: 0.2pt;
+    border-radius: 10px;
+    transition: transform 0.14s ease, 
+                background-color 0.14s ease, 
+                border-color 0.14s ease;
+}
+
+#group-rate-learn:hover, #nontrad-learn:hover{
+    transform: scale(1.1);
+    background-color: #910101;
+    border-color: #5e0202;
+}
+
+
+
+/* Card color option #1
+#standard-tier {
+    background-color: #ecbfbf;
+}
+#ap-prep-tier {
+    background-color: #c7cbf0;
+}
+#college-consult-tier {
+    background-color: #dbf6de;
+}
+#custom-study-tier {
+    background-color: #eddef8;
+}
+#quick-hw-help-tier {
+    background-color: #d8fbfa;
+}
+#standard-tier, #ap-prep-tier,
+#college-consult-tier, #custom-study-tier,
+#quick-hw-help-tier {
+    background-color: #eeeeee;
+}*/
+
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+/* ------------------------------------------------- */
+
+
+/* ------------------------------------------------- */
+/* ---------------- Scholarships ------------------- */
+/* ------------------------------------------------- */
+
+
+.plan529-card {
+  --navy: #0f1765;
+  --navy-light: #1a278f;
+  --maroon: #910101;
+  --card-bg: #ffffff;
+  --text: #1d2433;
+  --muted: #5c6475;
+  --border: rgba(15, 23, 101, 0.12);
+  --shadow: 0 14px 40px rgba(10, 18, 60, 0.12);
+
+  position: relative;
+  width: min(100%, 560px);
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.plan529-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(145, 1, 1, 0.25);
+  box-shadow: 0 18px 48px rgba(10, 18, 60, 0.16);
+}
+
+.plan529-cap {
+  height: 14px;
+  background: linear-gradient(90deg, var(--navy), var(--navy-light), var(--maroon));
+}
+
+.plan529-content {
+  padding: 1.5rem 1.25rem 1.35rem;
+}
+
+.plan529-eyebrow {
+  margin: 0 0 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--maroon);
+}
+
+.plan529-content h2 {
+  margin: 0 0 0.65rem;
+  font-size: clamp(1.45rem, 2vw, 1.9rem);
+  line-height: 1.15;
+  color: var(--navy);
+}
+
+.plan529-text,
+.plan529-note,
+.plan529-disclaimer {
+  line-height: 1.55;
+}
+
+.plan529-text {
+  margin: 0 0 1.15rem;
+  color: var(--text);
+}
+
+.plan529-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.plan529-form select,
+.plan529-form button {
+  min-height: 52px;
+  border-radius: 14px;
+  font: inherit;
+}
+
+.plan529-form select {
+  width: 100%;
+  padding: 0 1rem;
+  border: 1.5px solid rgba(15, 23, 101, 0.18);
+  background: #fff;
+  color: var(--text);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.plan529-form select:focus {
+  outline: none;
+  border-color: var(--navy);
+  box-shadow: 0 0 0 4px rgba(15, 23, 101, 0.10);
+}
+
+.plan529-form button {
+  padding: 0 1.1rem;
+  border: 1.5px solid transparent;
+  background: var(--navy);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.2s ease;
+}
+
+.plan529-form button:hover {
+  background: var(--maroon);
+  transform: translateY(-1px);
+}
+
+.plan529-form button:focus-visible {
+  outline: none;
+  border-color: var(--maroon);
+  box-shadow: 0 0 0 4px rgba(145, 1, 1, 0.12);
+}
+
+.plan529-note {
+  margin: 0 0 0.7rem;
+  font-size: 0.96rem;
+  color: var(--muted);
+}
+
+.plan529-disclaimer {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--muted);
+  border-top: 1px solid rgba(15, 23, 101, 0.08);
+  padding-top: 0.9rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 560px) {
+  .plan529-form {
+    grid-template-columns: 1fr;
+  }
+
+  .plan529-form button {
+    width: 100%;
+  }
+}

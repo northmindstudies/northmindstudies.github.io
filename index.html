@@ -20,7 +20,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
         <link rel="icon" type="image/png" href="images/transparent-logo-square.png"> 
-		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--link rel="stylesheet" href="assets/css/main.css" /-->
+		<link rel="stylesheet" href="assets/css/main_mobile1st.css"
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 		
 		<!-- Fonts -->
@@ -35,34 +36,28 @@
 
 		<!-- Header -->
 			<!-- Header -->
-			<section id="header0">
-				<a href="index.html"><img src="images/full_logo_transparent_square.png" alt="Northmind Studies compass logo" /></a>
-				<!--img src="images/colored-logo.png" alt="" /-->
-				<!--header>
-					<img src="images/colored-logo.png" alt="" />
-					<h5><em>Virtual tutoring worldwide, in-person tutoring for Delawareans</em></h5>
-			</header-->
+			<section class="site-header" id="header1">
+				<a href="index.html" class="logo-link">
+					<img src="images/full_logo_transparent_square.png" alt="Northmind Studies compass logo" class="logo" />
+				</a>
 
-				<nav id="nav0">
-					<ul>
-						<li><a href="#intro" class="nav-a">Introduction</a></li>
-						<li><a href="#services" class="nav-a">Services</a></li>
-						<li><a href="#pricing" class="nav-a">Pricing</a></li>
-						<li><a href="#scholarships" class="nav-a">Scholarships</a></li>
-						<li><a href="#" class="nav-a">About Us</a></li>
-						<li><a href="#consultation" class="nav-a">Consultation</a></li>
-					</ul>
-				</nav>
+				<button class="menu-toggle" aria-label="Open menu" 
+				        aria-expanded="false" aria-controls="site-nav">
+					☰
+				</button>
 
-				<!--footer>
-					<ul class="icons0">
-						<li><a href="https://www.instagram.com/northmindstudies/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="https://www.facebook.com/northmindstudies0" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.linkedin.com/company/northmind-studies" class="fa-brands fa-linkedin"><span class="label"></span></a></li>
-						<li><a href="mailto:info.northmindstudies@gmail.com" class="fa-regular fa-envelope"><span class="label"></span></a></li>
-						<li><a href="tel:+16106389442" class="fa-solid fa-phone"><span class="label"></span></a></li>
-					</ul>
-				</footer-->
+				<div class="nav-overlay">
+					<nav id="site-nav" class="site-nav">
+						<ul class="nav-list">
+							<li><a href="#intro" class="nav-a">Intro</a></li>
+							<li><a href="#services" class="nav-a">Services</a></li>
+							<li><a href="#pricing" class="nav-a">Pricing</a></li>
+							<li><a href="#scholarships" class="nav-a">Scholarships</a></li>
+							<li><a href="#" class="nav-a">About</a></li>
+							<li><a href="#consultation" class="nav-a">Consultation</a></li>
+						</ul>
+					</nav>
+				</div>
 			</section>
 
 		<!-- Wrapper -->
@@ -74,7 +69,7 @@
 						<!-- Intro -->
 							<section class="content-section" id="intro">
 								<div class="container even">
-									<h3 id="super">Chase Excellence and Success Will Follow</h3>
+									<h3 id="super">Chase Excellence & Success Follows</h3>
 									<div id="intro-paragraph">
 										<!-- We offer 10+ years of experience including private tutoring, test prep, and college-level instruction which we use to adapt to your learning style. -->
 										<p>Whether you're catching up or getting ahead, we work to ensure understanding in your subjects to provide the tools you need to pursue your education confidently with full independence.</p>
@@ -301,7 +296,7 @@
 									</ul-->
 								</div>
 							</section>
-						<hr>
+							<hr>
 						<!-- Scholarships -->
 							<section class="content-section" id="scholarships">
 								<div class="container odd">
@@ -456,6 +451,7 @@
         
 
 		<!-- Scripts -->
+			<script src="assets/js/navbar.js"></script>
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>

@@ -1,6 +1,9 @@
 @import url("fontawesome-all.min.css");
 /* Header0 */
 
+html {
+    font-size: 16px;
+}
 
 body {
     font-family: "Lora", serif; /*"Libre Baskerville", serif */
@@ -17,40 +20,132 @@ hr {
     margin: 30px;
 }
 
-#header0 {
-   display: flex;
+
+/* Mobile first Nav-bar*/
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  position: relative;
+  z-index: 1001;
 }
 
-    #header0 > nav {
-        display: flex;
-        width: 100%;
-        justify-content: space-around;
+.logo {
+  display: block;
+  height: auto;
+  max-width: 200px;
+}
+
+.menu-toggle {
+  position: relative;
+  z-index: 1002;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #232323;
+}
+
+.nav-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.nav-overlay.open {
+  display: flex;
+}
+
+.site-nav {
+  background: #eeeeee;
+  padding: 2rem 2.5rem;
+  border-radius: 1rem;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  max-width: 90vw;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-list li + li {
+  margin-top: 1.25rem;
+}
+
+.nav-list a {
+  display: block;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  color: #1e1d1d;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* tablet/desktop */
+@media (min-width: 864px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-overlay {
+        position: static;
+        inset: auto;
+        display: block;
+        background: transparent;
+        z-index: auto;
         margin: 0 auto;
-        font-weight: 700;
-        font-size: large;
     }
 
-    #header0 > a > img {
-        width:200px;
-        border-radius:200px;
-    }
-
-    #header0 > nav > ul {
-        list-style-type: none;
-        display: flex;
-        align-items: center;
+    .site-nav {
+        display: block;
+        position: static;
+        width: auto;
+        background: transparent;
+        border: none;
         padding: 0;
+        text-align: left;
+        box-shadow: none;
     }
 
-        #header0 > nav > ul > li {
-            height: 1.25em;
-            margin: 0 1.5em;
-            text-align: center;
-        }
+    .nav-list {
+        display: flex;
+        gap: 0.2rem;
+        align-items: center;
+    }
 
+    .nav-list li + li {
+        margin-top: 0;
+    }
+
+    .nav-list a {
+        font-size: 1.1rem;
+    }
+}
+
+/* desktop */
+@media (min-width: 1200px){
+    .nav-list {
+        gap: 2rem
+    }
+
+    .nav-list a {
+        font-size: 1.2rem;
+    }
+}
+
+/* ---------------------------------------------- */
+/*
 :root {
-  --brand-primary: #0f1765;  /* your maroon */
-  --brand-accent: #910101;  /* your navy */
+  --brand-primary: #0f1765; 
+  --brand-accent: #910101;  
 }
 
 #nav0 a.nav-a {
@@ -64,6 +159,7 @@ hr {
 #nav0 a.nav-a:focus-visible {
   color: var(--brand-accent) !important;
 }
+*/
 
 .container {
     margin: 10px 0 0 0;
@@ -637,27 +733,156 @@ li > i {
 /* ------------------------------------------------- */
 
 
-.state-529-finder {
-  max-width: 420px;
-  display: flex;
-  flex-direction: column;
+.plan529-card {
+  --navy: #0f1765;
+  --navy-light: #1a278f;
+  --maroon: #910101;
+  --card-bg: #ffffff;
+  --text: #1d2433;
+  --muted: #5c6475;
+  --border: rgba(15, 23, 101, 0.12);
+  --shadow: 0 14px 40px rgba(10, 18, 60, 0.12);
+
+  position: relative;
+  width: min(100%, 560px);
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.plan529-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(145, 1, 1, 0.25);
+  box-shadow: 0 18px 48px rgba(10, 18, 60, 0.16);
+}
+
+.plan529-cap {
+  height: 14px;
+  background: linear-gradient(90deg, var(--navy), var(--navy-light), var(--maroon));
+}
+
+.plan529-content {
+  padding: 1.5rem 1.25rem 1.35rem;
+}
+
+.plan529-eyebrow {
+  margin: 0 0 0.4rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--maroon);
+}
+
+.plan529-content h2 {
+  margin: 0 0 0.65rem;
+  font-size: clamp(1.45rem, 2vw, 1.9rem);
+  line-height: 1.15;
+  color: var(--navy);
+}
+
+.plan529-text,
+.plan529-note,
+.plan529-disclaimer {
+  line-height: 1.55;
+}
+
+.plan529-text {
+  margin: 0 0 1.15rem;
+  color: var(--text);
+}
+
+.plan529-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
   gap: 0.75rem;
+  margin-bottom: 1rem;
 }
 
-.state-529-finder select,
-.state-529-finder button {
-  padding: 0.8rem 1rem;
+.plan529-form select,
+.plan529-form button {
+  min-height: 52px;
+  border-radius: 14px;
   font: inherit;
-  border-radius: 0.75rem;
-  border: 1px solid #ccc;
 }
 
-.state-529-finder button {
+.plan529-form select {
+  width: 100%;
+  padding: 0 1rem;
+  border: 1.5px solid rgba(15, 23, 101, 0.18);
+  background: #fff;
+  color: var(--text);
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.plan529-form select:focus {
+  outline: none;
+  border-color: var(--navy);
+  box-shadow: 0 0 0 4px rgba(15, 23, 101, 0.10);
+}
+
+.plan529-form button {
+  padding: 0 1.1rem;
+  border: 1.5px solid transparent;
+  background: var(--navy);
+  color: #fff;
+  font-weight: 600;
   cursor: pointer;
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    transform 0.2s ease;
 }
 
-.helper-text {
-  font-size: 0.95rem;
-  line-height: 1.4;
+.plan529-form button:hover {
+  background: var(--maroon);
+  transform: translateY(-1px);
 }
 
+.plan529-form button:focus-visible {
+  outline: none;
+  border-color: var(--maroon);
+  box-shadow: 0 0 0 4px rgba(145, 1, 1, 0.12);
+}
+
+.plan529-note {
+  margin: 0 0 0.7rem;
+  font-size: 0.96rem;
+  color: var(--muted);
+}
+
+.plan529-disclaimer {
+  margin: 0;
+  font-size: 0.88rem;
+  color: var(--muted);
+  border-top: 1px solid rgba(15, 23, 101, 0.08);
+  padding-top: 0.9rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+@media (max-width: 560px) {
+  .plan529-form {
+    grid-template-columns: 1fr;
+  }
+
+  .plan529-form button {
+    width: 100%;
+  }
+}

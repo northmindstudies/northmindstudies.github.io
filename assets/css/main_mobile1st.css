@@ -596,11 +596,36 @@ hr {
     }
 }
 
+#pricing-tiers-nonstandard.hidden-tiers {
+  display: none;
+}
+
+#pricing-tiers-nonstandard.hidden-tiers.open {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%;
+  margin: 20px auto;
+  padding: 1.5rem 1rem 0 1rem;
+  border-top: 1px solid #0f1765;
+  box-sizing: border-box;
+}
+
+@media (min-width: 1024px) {
+  #pricing-tiers-nonstandard.hidden-tiers.open {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: nowrap;
+    gap: 1.25rem;
+    max-width: 1200px;
+    padding: 1.5rem 1rem 0 1rem;
+  }
+}
 
 
-/* ------------------------------------------------- */
-/* ------------------------------------------------- */
-/* ------------------------------------------------- */
+
 
 
 /* ------------------------------------------------- */

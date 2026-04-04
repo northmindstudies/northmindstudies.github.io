@@ -232,7 +232,7 @@
 														<li>Essay consults.</li>
 														<li>Course planning.</li>
 														<li>Extra-curriculars.</li>
-														<li>Career discussions.</li>
+														<li id="no-bottom-border">Career discussions.</li>
 													</ul>
 												</div>
 												
@@ -240,54 +240,68 @@
 
 										</div>
 
-										<!--div id="pricing-tiers-nonstandard">
+										<div id="pricing-tiers-nonstandard" class="hidden-tiers">
 											<div class="tier-card" id="custom-study-tier">
 												<div class="tier-cap-fill">
 													<p class="tier-category-txt">Custom Study</p>
 												</div>
+
+												<div class="cost-val-div">
+													<p class="cost-val-text">$72/week</p>
+												</div>
+
+												<div class="description">
+													<p>Does you student just need some extra material to study? We can help provide extra practice problems and materials with new perspectives to expand your student's learning.</p>
+												</div>
+
 												<div class="tier-card-content">
 													<ul>
 														<li>Course specific material design.</li>
 														<li>Extra practice w/ solutions.</li>
 														<li>Go above & beyond to improve understanding.</li>
-														<li>Tutoring is separate (with a bundled rate).</li>
+														<li id="no-bottom-border">Tutoring separate (w/ bundled rate).</li>
 													</ul>
 												</div>
-												<div class="cost-val-div">
-													<p class="cost-val-text">$72/week</p>
-												</div>
+												
 											</div>
 
 											<div class="tier-card" id="quick-hw-help-tier">
 												<div class="tier-cap-fill">
 													<p class="tier-category-txt">HW Help</p>
 												</div>
+
+												<div class="cost-val-div">
+													<p class="cost-val-text">$20/session</p>
+												</div>
+
+												<div class="description">
+													<p>Stuck on a few homework problems? Need explanations for why and how to apply certain concepts? Perhaps a quick suggestion to boost your class projects? </p>
+												</div>
+
 												<div class="tier-card-content">
 													<ul>
 														<li>Quick support</li>
 														<li>Get hints & paths forward</li>
 														<li>Limit:</li>
 														<ul>
-															<li>Two 20-min non-cosecutive sessions per week.</li>
+															<li>Two 20-min non-consecutive sessions per week.</li>
 														</ul>
 													</ul>
 												</div>
-												<div class="cost-val-div">
-													<p class="cost-val-text">$20/session</p>
-												</div>
 											</div>
-
-										</div-->
+										</div>
+										
 
 									<div class="pricing-learn">
 
 										<div class="pricing-learn-button">
-											<button id="group-rate-learn">Group Rates</button>
+											<button id="nontrad-learn" 
+											aria-expanded="false" aria-controls="pricing-tiers-nonstandard">Small Services</button>
 										</div>
 
-										<div class="pricing-learn-button">
-											<button id="nontrad-learn">Small Services</button>
-										</div>
+										<!--div class="pricing-learn-button">
+											<button id="group-rate-learn">Group Rates</button>
+										</div-->
 
 									</div>
 
@@ -302,7 +316,7 @@
 							</section>
 							<hr>
 						<!-- Scholarships -->
-							<section class="content-section" id="scholarships">
+							<section class="content-section" id="ed-finances">
 								<div class="container odd">
 									
 									<h3>Education Finances</h3>

@@ -1,5 +1,5 @@
 @import url("fontawesome-all.min.css");
-/* Header0 */
+
 
 html {
     font-size: 16px;
@@ -67,6 +67,7 @@ hr {
   border-radius: 1rem;
   text-align: center;
   box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  border: 2px solid #910101;
   max-width: 90vw;
 }
 
@@ -84,7 +85,7 @@ hr {
   display: block;
   padding: 0.5rem 1rem;
   font-size: 1.5rem;
-  color: #1e1d1d;
+  color: #0f1765; /*#1e1d1d;*/
   text-decoration: none;
   font-weight: 600;
 }
@@ -141,296 +142,221 @@ hr {
     }
 }
 
-/* ---------------------------------------------- */
-/*
-:root {
-  --brand-primary: #0f1765; 
-  --brand-accent: #910101;  
-}
-
-#nav0 a.nav-a {
-    color: var(--brand-primary) !important; 
-    transition: color 150ms ease;
-    align-items: center;
-    font-weight: 900;
-}
-
-#nav0 a.nav-a:hover,
-#nav0 a.nav-a:focus-visible {
-  color: var(--brand-accent) !important;
-}
-*/
+/* ---------------------------------------------------- */
+/* ------------------ Hero section ----------------- */
+/* ---------------------------------------------------- */
 
 .container {
-    margin: 10px 0 0 0;
-    
+    margin: 10px 0 0 0; 
 }
 
-#main > section > .container > h3 {
+#intro-header {
     color: #910101;
     display: block;
-    /*width: 250px;*/
-    margin: 0 auto 0.5em auto;
+    margin: 0em auto 0.5em auto;
     text-align: center;
     font-size: 1.8em;
 }
 
-#main > section > .container > #super {
-    width: fit-content;
-    font-size: 2.25em;
-}
-
-#main > section > .container > #consult-header {
-    width: fit-content;
-}
-
-ul {
-    margin: 0;
-}
-
-/* .even {
-    background-color: #c9cfff;
-}
-    */
-
-.odd {
-    background-color: #eeeeee; /*#f4e6e6;*/
-}
-
-#main > section > .container.odd > h3 {
-    color: #0f1765;
-}
-
-#main > section > .container.even > h3 {
-    color: #910101;
-}
-
-a {
-    color: #009011;
-    text-decoration: none;
-}
-
-p {
-    padding: 0;
-    margin: 0;
-    font-size: 11pt;
-}
-
-#intro-paragraph > p {
-    text-align: center;
+#intro-paragraph {
     display: block;
-    width: 100%;
-    max-width:800px;
-    margin: 0 auto;
-    padding: 0 25px 0 25px;
+    margin: 0em auto 0em auto;
+    text-align: center;
+    max-width: 48em;
 }
+
 
 /* ---------------------------------------------------- */
 /* ---------------------- Services -------------------- */
 /* ---------------------------------------------------- */
 
+#service-header {
+  color: #0f1765;
+  margin: 0 auto 0.5em;
+  text-align: center;
+  font-size: 1.8em;
+}
 
-#service-intro {
+#service-intro-p {
+  margin: 0 auto 2rem;
+  text-align: center;
+  max-width: 48em;
+  padding: 0 1rem;
+}
+
+/* mobile-first layout */
+#open-services {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto 5em auto;
+  padding: 0 0rem;
+}
+
+.service-listing {
+  display: flex;
+  flex-direction: column;
+  background: #eeeeee; /*#ffffff;*/
+  border-radius: 12px;
+  padding: 1rem;
+  margin: 0;
+  min-height: 100%;
+}
+
+.service-listing > img {
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  margin: 0 auto;
+  border-radius: 10px;
+  transition: transform 0.14s ease, outline 0.14s ease;
+}
+
+.service-listing > img:hover {
+  transform: scale(1.05);
+  outline: 3px solid #910101;
+}
+
+.service-listing > h4 {
+  width: max-content;
+  margin: 1rem auto;
+  font-size: 1.4em;
+  font-weight: 800;
+  color: #910101;
+}
+
+.service-listing > .service-desc {
+  width: 100%;
+  max-width: 32rem;
+  margin: 0 auto 1.5rem;
+  padding: 0;
+  line-height: 1.6;
+  text-align: left;
+}
+
+#open-services > .service-listing > ul {
+  list-style-type: none;
+  width: max-content;
+  margin: 0 auto 1.5rem;
+  padding: 0;
+  font-weight: 600;
+}
+
+#open-services > .service-listing > ul > li {
+  margin: 0 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.learn-more {
+  margin-top: auto;
+}
+
+.service-listing > .learn-more > button {
+  display: block;
+  width: 100%;
+  max-width: 220px;
+  margin: 0 auto;
+  padding: 8px 24px;
+  font-size: 1.05em;
+  color: #f4f4f4;
+  background-color: #0f1765;
+  border: solid #1e32e0 4px;
+  border-radius: 12px;
+  font-family: inherit;
+  transition: transform 0.14s ease;
+  cursor: pointer;
+}
+
+.service-listing > .learn-more > button:hover {
+  transform: scale(1.05);
+}
+
+/* slightly roomier phones / small tablets */
+@media (min-width: 480px) {
+  .service-listing {
+    padding: 1.25rem;
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) {
+  #open-services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+  #open-services {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+  }
+
+  .service-listing {
+    padding: 1.5rem;
+  }
+
+  #subjects-listing > .learn-more > button,
+  #college-prep-listing > .learn-more > button {
+    border: solid #5e0202 4px;
+    background-color: #910101;
+    color: #eeeeee;
+  }
+}
+
+/*
+#service-header {
+    color: #0f1765;
     display: block;
-    width:fit-content;
-    margin: 10px auto;
-}
-
-
-/* Services Btn */
-
-#service-btns {
-    display: flex;
-    width: fit-content;
-    margin: 20px auto;
-}
-
-.serv-btn {
-    margin: 0 15px 10px 15px;
-}
-
-.service-items > li {
-    margin: 8px;
-}
-
-/* --------------- Math service Button */
-
-
-
-#services-toggle-subjects {
-  background-color: var(--brand-primary);
-  color: white;
-  border: none;
-  padding: 0.6rem 1rem;
-  font-family: inherit;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 4px;
-  display: block;
-  margin: 0 auto;
-}
-
-#services-toggle-subjects:hover {
-  background-color: var(--brand-accent);
-}
-
-/* hidden by default */
-#services-list-subjects {
-  list-style: disc;
-  padding-left: 1.25rem;
-
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 300ms ease;
-
-  display: block;
-  width: fit-content;
-  margin: 0.75rem auto 0 auto;
-
-  list-style-type: none;
-}
-
-/* visible state */
-#services-list-subjects.open {
-  max-height: 500px; /* large enough to fit content */
-}
-
-
-/* --------------- Physics Service Button */
-
-
-#services-toggle-instr {
-  background-color: var(--brand-primary);
-  color: white;
-  border: none;
-  padding: 0.6rem 1rem;
-  font-family: inherit;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 4px;
-  display: block;
-  margin: 0 auto;
-}
-
-#services-toggle-instr:hover {
-  background-color: var(--brand-accent);
-}
-
-/* hidden by default */
-#services-list-instr {
-  list-style: disc;
-  padding-left: 1.25rem;
-
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 300ms ease;
-
-  display: block;
-  width: fit-content;
-  margin: 0.75rem auto 0 auto;
-
-  list-style-type: none;
-}
-
-/* visible state */
-#services-list-instr.open {
-  max-height: 500px; /* large enough to fit content */
-}
-
-
-/* --------------- CS Service Button */
-
-
-#services-toggle-college-prep {
-  background-color: var(--brand-primary);
-  color: white;
-  border: none;
-  padding: 0.6rem 1rem;
-  font-family: inherit;
-  font-size: 1rem;
-  cursor: pointer;
-  border-radius: 4px;
-  display: block;
-  margin: 0 auto;
-}
-
-#services-toggle-college-prep:hover {
-  background-color: var(--brand-accent);
-}
-
-/* hidden by default */
-#services-list-college-prep {
-  list-style: disc;
-  padding-left: 1.25rem;
-
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 300ms ease;
-
-  display: block;
-  width: fit-content;
-  margin: 0.75rem auto 0 auto;
-
-  list-style-type: none;
-}
-
-/* visible state */
-#services-list-college-prep.open {
-  max-height: 500px; /* large enough to fit content */
-}
-
-
-#extra-service-details {
-    list-style-type: none;
-    display: block;
+    margin: 0em auto 0.5em auto;
     text-align: center;
-    width:100%;
-    max-width:600px;
-    margin: 0px auto;
+    font-size: 1.8em;
 }
 
-#extra-service-details > li {
-    padding: 0 0 20px 0;
-}
-
-li > i {
-    margin: 0 20px 0 0;
-    width: 8px
+#service-intro-p {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 48em;
 }
 
 
-
-
-
-/* ---------------------------------------------------------- */
-/* -------------- ALTERNATIVE: Full Service Display --------- */
-/* ---------------------------------------------------------- */
 
 
 #open-services {
     display: flex;
-    width:fit-content;
-    margin: 40px auto 0 auto;
+    flex-direction: column;
+    align-items: center;
 }
 
-.service-listing {
-    /*border: 1px #242424 solid;
-    border-radius: 10px;*/
-    margin: 0 -50px;
+.service-listing { 
     position: relative;
+    margin: 1em 0 0 0;
+}
+
+
+.service-listing {
+    display: flex;
+    flex-direction: column;
 }
 
 #open-services > .service-listing > ul {
     list-style-type: none;
     display:block;
     width:fit-content;
-    margin: 10px auto 100px auto;
+    margin: 10px auto 0px auto;
     padding: 0;
     font-weight: 600;
 }
 
 #open-services > .service-listing > ul > li {
-    margin: 0 0 10px 0;
+    margin: 0 0 10px;
 }
 
 .service-listing > h4 {
@@ -439,13 +365,13 @@ li > i {
     margin: 25px auto;
     font-size: 1.4em;
     font-weight: 800;
-    color: #910101;/*#242424;*/
+    color: #910101;
 }
 
 .service-listing > .service-desc {
-    width: 260px;
+    max-width: 280px;
     text-align: justify;
-    margin: 0 0 20px 0;
+    margin: 0 0 2em 0;
     padding: 0 10px;
 }
 
@@ -453,6 +379,8 @@ li > i {
     object-fit: contain;
     height: auto;
     width: 280px;
+    display: block;
+    margin: 0 auto;
     border-radius: 10px;
     transition: transform 0.14s ease, outline 0.14s ease;
 }
@@ -481,37 +409,74 @@ li > i {
 }
 
 .learn-more {
-    position: absolute;
-    bottom: 0;
-    left:10%;
-    right:10%;
-    margin: 0 0 10px 0;
+    position: static;
+    margin-top: auto;
 }
 
-#subjects-listing {
-    margin: 0 100px 0px 0;   
-}
-
-    #subjects-listing > .learn-more > button {
-        border: solid #5e0202;
-        background-color: #910101;
-        color:#eeeeee;
+@media (min-width: 480px) {
+    .service-desc {
+        max-width: 830px;
     }
 
-#college-prep-listing {
-    margin: 0 0 0px 100px;
+    .service-listing { 
+        position: relative;
+    }
 }
 
-    #college-prep-listing > .learn-more > button {
+@media (min-width: 955px) {
+    #open-services {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        justify-content: center;
+    }
+
+    #subjects-listing {
+        margin: 0 20px 0px 0;   
+    }
+
+        #subjects-listing > .learn-more > button {
             border: solid #5e0202;
             background-color: #910101;
             color:#eeeeee;
         }
 
+    #college-prep-listing {
+        margin: 0 0 0px 20px;
+    }
 
+        #college-prep-listing > .learn-more > button {
+                border: solid #5e0202;
+                background-color: #910101;
+                color:#eeeeee;
+            }
+}
 
+@media (min-width: 1110px) {
+    
 
+    #subjects-listing {
+        margin: 0 100px 0px 0;   
+    }
 
+        #subjects-listing > .learn-more > button {
+            border: solid #5e0202;
+            background-color: #910101;
+            color:#eeeeee;
+        }
+
+    #college-prep-listing {
+        margin: 0 0 0px 100px;
+    }
+
+        #college-prep-listing > .learn-more > button {
+                border: solid #5e0202;
+                background-color: #910101;
+                color:#eeeeee;
+            }
+}
+
+*/
 
 /* --------------------------------------------------------- */
 /* -------------------- Pricing Section -------------------- */

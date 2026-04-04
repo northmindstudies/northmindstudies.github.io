@@ -310,286 +310,150 @@ hr {
   }
 }
 
-/*
-#service-header {
-    color: #0f1765;
-    display: block;
-    margin: 0em auto 0.5em auto;
-    text-align: center;
-    font-size: 1.8em;
-}
 
-#service-intro-p {
-    display: block;
-    margin: 0 auto;
-    text-align: center;
-    max-width: 48em;
-}
-
-
-
-
-#open-services {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.service-listing { 
-    position: relative;
-    margin: 1em 0 0 0;
-}
-
-
-.service-listing {
-    display: flex;
-    flex-direction: column;
-}
-
-#open-services > .service-listing > ul {
-    list-style-type: none;
-    display:block;
-    width:fit-content;
-    margin: 10px auto 0px auto;
-    padding: 0;
-    font-weight: 600;
-}
-
-#open-services > .service-listing > ul > li {
-    margin: 0 0 10px;
-}
-
-.service-listing > h4 {
-    display: block;
-    width:max-content;
-    margin: 25px auto;
-    font-size: 1.4em;
-    font-weight: 800;
-    color: #910101;
-}
-
-.service-listing > .service-desc {
-    max-width: 280px;
-    text-align: justify;
-    margin: 0 0 2em 0;
-    padding: 0 10px;
-}
-
-.service-listing > img {
-    object-fit: contain;
-    height: auto;
-    width: 280px;
-    display: block;
-    margin: 0 auto;
-    border-radius: 10px;
-    transition: transform 0.14s ease, outline 0.14s ease;
-}
-
-.service-listing > img:hover {
-    transform: scale(1.05);
-    outline: 3px solid #910101;
-}
-
-.service-listing > .learn-more > button {
-    display: block;
-    width:max-content;
-    margin: 0px auto;
-    padding: 8px 24px;
-    font-size: 1.05em;
-    color:#f4f4f4;
-    background-color: #0f1765;
-    border: solid #1e32e0 4px;
-    border-radius: 12px;
-    font-family: inherit;
-    transition: transform 0.14s ease;
-}
-
-.service-listing > .learn-more > button:hover {
-    transform: scale(1.10);
-}
-
-.learn-more {
-    position: static;
-    margin-top: auto;
-}
-
-@media (min-width: 480px) {
-    .service-desc {
-        max-width: 830px;
-    }
-
-    .service-listing { 
-        position: relative;
-    }
-}
-
-@media (min-width: 955px) {
-    #open-services {
-        display: flex;
-        flex-direction: row;
-        gap: 2rem;
-        justify-content: center;
-    }
-
-    #subjects-listing {
-        margin: 0 20px 0px 0;   
-    }
-
-        #subjects-listing > .learn-more > button {
-            border: solid #5e0202;
-            background-color: #910101;
-            color:#eeeeee;
-        }
-
-    #college-prep-listing {
-        margin: 0 0 0px 20px;
-    }
-
-        #college-prep-listing > .learn-more > button {
-                border: solid #5e0202;
-                background-color: #910101;
-                color:#eeeeee;
-            }
-}
-
-@media (min-width: 1110px) {
-    
-
-    #subjects-listing {
-        margin: 0 100px 0px 0;   
-    }
-
-        #subjects-listing > .learn-more > button {
-            border: solid #5e0202;
-            background-color: #910101;
-            color:#eeeeee;
-        }
-
-    #college-prep-listing {
-        margin: 0 0 0px 100px;
-    }
-
-        #college-prep-listing > .learn-more > button {
-                border: solid #5e0202;
-                background-color: #910101;
-                color:#eeeeee;
-            }
-}
-
-*/
 
 /* --------------------------------------------------------- */
 /* -------------------- Pricing Section -------------------- */
 /* --------------------------------------------------------- */
 
-#pricing-tiers {
-    display: flex;
-    width: max-content;
-    /*max-width:1000px;*/
-    margin: 20px auto;
-    /*font-family: "Menbere";*/
+#pricing-header {
+  color: #910101;
+  margin: 0 auto 0.5em;
+  text-align: center;
+  font-size: 1.8em;
 }
 
+#pricing-tiers,
 #pricing-tiers-nonstandard {
     display: flex;
-    width: max-content;
-    /*max-width:1000px;*/
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
     margin: 20px auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
 }
 
 .tier-card {
-    border: 3px solid #0f1765;
+    /*border: 3px solid #0f1765;*/
+    border: 2px solid #0f1765;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
     border-radius: 10px;
-    margin: 0px 10px;
+    margin: 0;
     padding: 0;
-    display:flex;
+    display: flex;
     flex-direction: column;
+    width: 100%;
     max-width: 300px;
     overflow: hidden;
-    transition: transform 0.14s ease, 
-                border-color 0.14s ease, 
+    transition: transform 0.14s ease,
+                border-color 0.14s ease,
                 font-weight 0.14s ease;
     font-weight: 500;
+    box-sizing: border-box;
 }
 
 .tier-card:hover {
-    transform: scale(1.10);
-    border-color: #d7d7d7;
+    transform: scale(1.05) translateY(-4px);
     font-weight: 600;
 }
 
 .tier-card .tier-cap-fill,
 .tier-card .tier-card-content,
 .tier-card .cost-val-div {
-    transition: transform 0.2s ease, 
-        background-color 0.14s ease, 
-        color 0.14s ease,
-        font-weight 0.14s ease;
+    transition: transform 0.2s ease,
+                background-color 0.14s ease,
+                color 0.14s ease,
+                font-weight 0.14s ease;
 }
 
 .tier-card:hover .tier-cap-fill {
     background-color: #0f1765;
-    color:#eeeeee
+    color: #eeeeee;
 }
 
 .tier-card:hover .tier-card-content {
-    background-color: #910101;
-    color: #eeeeee;
+    /*background-color: #910101;
+    color: #eeeeee;*/
+
+    background-color: #f8f8fb;
+    color: #222222;
 }
 
 .tier-card:hover .cost-val-div {
-    background-color:#0d6517;
+    background-color: #a7efb0;
     color: #eeeeee;
-    transform: scale(1.1);
+    transform: scale(1.05);
     font-weight: 700;
 }
 
 .tier-cap-fill {
-    height: 10%; /* controls how much is filled */
     width: 100%;
-    background-color: #bfc2dd; /*#dfe2f6*/
-    margin: 0px 0 0 0;
+    /*background-color: #bfc2dd;
+    color: #292929;*/
+    background-color: #eedcdc;
+    color: #2a2929;
+    margin: 0;
     padding: 10px 0;
-    color:#292929;
     transition: background-color 0.14s ease;
+    box-sizing: border-box;
 }
 
 .tier-cap-fill:hover {
-    background-color:#0f1765;
+    background-color: #0f1765;
 }
 
 .tier-category-txt {
     text-align: center;
+    /*
     font-size: 1.15em;
     font-weight: 500;
-    margin: 0 0 10px 0;
+    margin: 0 0 10px 0;*/
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    margin: 0;
+}
+
+.description {
+    /*background-color: #dedcdc;*/
+    background-color: #efeff3;
+    padding: 10px 10px;
+}
+
+.description > p {
+    font-size: 0.95em;
+    margin: 0;
+    line-height: 1.5;
 }
 
 .tier-card-content {
-    height: 100%; /* controls how much is filled */
     width: 100%;
-    background-color: #dab5b5; /*#ecd9d9*/
-    margin: 0px 0 0 0;
+    /*background-color: #dab5b5;*/
+    background-color: #f8f8fb;
+    color: #222222;
+    margin: 0;
     padding: 5px 0 5px 0;
-    font-size: 0.85em;
+    font-size: 0.9em;
+    line-height: 1.45;
     font-weight: 600;
+    flex-grow: 1;
+    box-sizing: border-box;
 }
-
-
-
 
 .tier-card > .tier-card-content > ul {
     list-style: none;
-    padding-left: 0px;
+    padding-left: 0;
+    margin: 0;
 }
 
 .tier-card > .tier-card-content > ul > li {
-    margin: 10px 0 0 0px;
+    margin: 10px 0 0 0;
     padding: 0 15px 0 15px;
     border-bottom: 1px solid #767676;
 }
 
-/* Is there any easier way to specify this...? */
 .tier-card > .tier-card-content > ul > li#no-bottom-border {
     border-bottom: none;
 }
@@ -597,53 +461,60 @@ hr {
 .tier-card > .tier-card-content > ul > ul {
     list-style: none;
     padding: 0 10px 0 30px;
+    margin: 0;
 }
 
 .tier-card > .tier-card-content > ul > ul > li {
     margin-top: 5px;
 }
 
-.cost-val-div{
-    margin: auto 0;
+.cost-val-div {
+    margin-top: auto;
     padding: 10px 0;
-    background-color: #eeeeee;
-    height: 60px;
+    /*background-color: #eeeeee;*/
+    background-color: #ffffff;
+    border-top: 1px solid #d8d8df;
+    min-height: 60px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
 .cost-val-text {
     display: block;
     width: fit-content;
-    margin: 0 auto 0px auto;
+    margin: 0 auto;
     text-align: center;
-    font-weight: 900;
-    font-size: 1.35em;
-}
-
-.description {
-    background-color: #dedcdc;
-    padding: 10px 10px; 
-}
-
-.description > p {
-    font-size: 0.9em;
+    /*font-weight: 900;
+    font-size: 1.35em;*/
+    font-size: 1.55rem;
+    font-weight: 800;
+    color: #0f1765;
 }
 
 .pricing-learn {
     display: flex;
-    width: fit-content;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
     margin: 50px auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
     font-family: inherit;
 }
 
 .pricing-learn-button {
-    margin: 0 10px;
+    width: 100%;
+    max-width: 320px;
+    margin: 0;
 }
 
-.pricing-learn-button > #group-rate-learn, #nontrad-learn {
+.pricing-learn-button > #group-rate-learn,
+.pricing-learn-button > #nontrad-learn {
+    width: 100%;
     background-color: #0f1765;
     border: 3px #1e32e0 solid;
     color: #eeeeee;
@@ -653,40 +524,79 @@ hr {
     font-family: "Lora", serif;
     letter-spacing: 0.2pt;
     border-radius: 10px;
-    transition: transform 0.14s ease, 
-                background-color 0.14s ease, 
+    transition: transform 0.14s ease,
+                background-color 0.14s ease,
                 border-color 0.14s ease;
+    box-sizing: border-box;
 }
 
-#group-rate-learn:hover, #nontrad-learn:hover{
-    transform: scale(1.1);
+#group-rate-learn:hover,
+#nontrad-learn:hover {
+    transform: scale(1.05);
     background-color: #910101;
     border-color: #5e0202;
 }
 
+/* tablet and up: buttons side by side */
+@media (min-width: 700px) {
+    .pricing-learn {
+        flex-direction: row;
+        justify-content: center;
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .pricing-learn-button {
+        width: auto;
+        max-width: none;
+    }
+
+    .pricing-learn-button > #group-rate-learn,
+    .pricing-learn-button > #nontrad-learn {
+        width: auto;
+    }
+}
+
+#pricing-tiers,
+#pricing-tiers-nonstandard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 1rem;
+    box-sizing: border-box;
+}
+
+.tier-card {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* desktop */
+@media (min-width: 1024px) {
+    #pricing-tiers,
+    #pricing-tiers-nonstandard {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: stretch;
+        flex-wrap: nowrap;
+        gap: 1.25rem;
+        width: 100%;
+        max-width: 1200px;
+        margin: 20px auto;
+        padding: 0 1rem;
+    }
+
+    .tier-card {
+        width: 300px;
+        max-width: 300px;
+    }
+}
 
 
-/* Card color option #1
-#standard-tier {
-    background-color: #ecbfbf;
-}
-#ap-prep-tier {
-    background-color: #c7cbf0;
-}
-#college-consult-tier {
-    background-color: #dbf6de;
-}
-#custom-study-tier {
-    background-color: #eddef8;
-}
-#quick-hw-help-tier {
-    background-color: #d8fbfa;
-}
-#standard-tier, #ap-prep-tier,
-#college-consult-tier, #custom-study-tier,
-#quick-hw-help-tier {
-    background-color: #eeeeee;
-}*/
 
 /* ------------------------------------------------- */
 /* ------------------------------------------------- */

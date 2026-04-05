@@ -42,3 +42,25 @@ if (smallServicesButton && nonstandardTiers) {
     smallServicesButton.textContent = isOpen ? "Hide Small Services" : "Small Services";
   });
 }
+
+
+document.querySelectorAll(".toggle-btn").forEach(button => {
+	const content = document.getElementById(button.getAttribute("aria-controls"));
+	const defaultText = button.textContent.trim();
+
+	button.addEventListener("click", function () {
+		const isOpen = button.getAttribute("aria-expanded") === "true";
+
+		button.setAttribute("aria-expanded", String(!isOpen));
+
+		if (isOpen) {
+			content.classList.remove("open");
+			content.hidden = true;
+			button.textContent = defaultText;
+		} else {
+			content.classList.add("open");
+			content.hidden = false;
+			button.textContent = "Show Less";
+		}
+	});
+});

@@ -19,7 +19,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
-        <link rel="icon" type="image/png" href="images/transparent-logo-square.png"> 
+        <link rel="icon" type="image/png" href="images/transparent_compass_sqaure.png"> 
 		<!--link rel="stylesheet" href="assets/css/main.css" /-->
 		<link rel="stylesheet" href="assets/css/main_mobile1st.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -33,6 +33,7 @@
 
 	</head>
 	<body class="is-preload">
+		<a href="#main" class="skip-link">Skip to main content</a>
 
 		<!-- Header -->
 			<!-- Header -->
@@ -48,14 +49,20 @@
 
 				<div class="nav-overlay">
 					<nav id="site-nav" class="site-nav">
-						<ul class="nav-list">
-							<li><a href="#intro" class="nav-a">Intro</a></li>
-							<li><a href="#services" class="nav-a">Services</a></li>
-							<li><a href="#pricing" class="nav-a">Pricing</a></li>
-							<li><a href="#scholarships" class="nav-a">Scholarships</a></li>
-							<li><a href="#" class="nav-a">About</a></li>
-							<li><a href="#consultation" class="nav-a">Consultation</a></li>
-						</ul>
+						<div id="navbar-fill">
+							<img src="images/transparent_compass_sqaure.png" alt="" class="navbar-fill-logo"/>
+						</div>
+						<div>
+							<ul class="nav-list">
+								<li><a href="#intro" class="nav-a">Intro</a></li>
+								<li><a href="#services" class="nav-a">Services</a></li>
+								<li><a href="#pricing" class="nav-a">Pricing</a></li>
+								<li><a href="#resources" class="nav-a">Resources</a></li>
+								<li><a href="#aboutus" class="nav-a">About</a></li>
+								<li><a href="#consultation" class="nav-a">Consultation</a></li>
+								<li><a href="#footer" class="nav-a">Contact</a></li>
+							</ul>
+						</div>
 					</nav>
 				</div>
 			</section>
@@ -64,12 +71,11 @@
 			<div id="wrapper">
 
 				<!-- Main -->
-					<div id="main">
-
+					<main id="main"> 
 						<!-- Intro -->
-							<section class="content-section" id="intro">
+							<section class="content-section fade-in-section" id="intro">
 								<div class="container even">
-									<h3 id="intro-header">Chase Excellence & Success Follows</h3>
+									<h1 id="intro-header">Chase Excellence & Success Follows</h1>
 									<div id="intro-paragraph">
 										<!-- We offer 10+ years of experience including private tutoring, test prep, and college-level instruction which we use to adapt to your learning style. -->
 										<p>Whether you're catching up or getting ahead, we work to ensure understanding in your subjects to provide the tools you need to pursue your education confidently with full independence.</p>
@@ -80,10 +86,10 @@
 							<hr>
 
 						<!-- Services -->
-							<section class="content-section" id="services">
+							<section class="content-section fade-in-section" id="services">
 								<div class="container odd" id="services-card-containers">
 
-									<h3 id="service-header">Services</h3>
+									<h2 id="service-header">Services</h2>
 									<div id="service-intro-p">
 										<p>We provide rigorous and quality academic tutoring and offer other services to support your student!</p>
 									</div>
@@ -94,13 +100,23 @@
 											<h4>Subjects</h4>
 											<p class="service-desc">While we specialize in STEM, we also offer to provide resources and connections for your child seeking assistance in English, Social Studies, History, Writing and other subjects.</p>
 											<ul>
-												<li><i class="fa-solid fa-infinity"></i> Mathematics</li>
-												<li><i class="fa-solid fa-atom"></i> Physics</li>
-												<li><i class="fa-solid fa-laptop-code"></i> Computer Science</li>
+												<li><i class="fa-solid fa-infinity" aria-hidden="true"></i> Mathematics</li>
+												<li><i class="fa-solid fa-atom" aria-hidden="true"></i> Physics</li>
+												<li><i class="fa-solid fa-laptop-code" aria-hidden="true"></i> Computer Science</li>
 											</ul>
 											<div class="learn-more">
-												<!--p>Learn More</p-->
-												<button>Learn More</button>
+												<button class="toggle-btn" aria-expanded="false" aria-controls="subjects-expand">View Subjects</button>
+												<div class="expand-content" id="subjects-expand" hidden>
+													<p>We offer support across a wide range of STEM subjects, with a focus on building strong conceptual understanding rather than rote memorization.</p>
+
+													<ul>
+														<li><strong>Mathematics:</strong> Pre-Algebra, Algebra I & II, Geometry, Trigonometry, Pre-Calculus, Calculus I & II (AP Calc AB & BC), Linear Algebra, Statistics</li>
+														<li><strong>Physics:</strong> High school and introductory college physics, including mechanics, electricity & magnetism</li>
+														<li><strong>Computer Science:</strong> Introductory programming, logical thinking, Python, Data Science, and problem-solving fundamentals</li>
+													</ul>
+
+													<p>If your student needs help outside of these areas, we are happy to provide guidance or connect you with trusted resources in subjects such as English, writing, and social studies.</p>
+												</div>
 											</div>
 										</div>
 
@@ -112,15 +128,26 @@
 											<p class="service-desc">We provide various means of engaging with your student from traditional sessions to additional checks-on-understanding to ensure concept mastery.</p>
 
 											<ul>
-												<li><i class="fa-solid fa-earth-americas"></i> Virtual Worldwide</li>
-												<li><i class="fa-solid fa-user-graduate"></i> In-Person in Delaware</li>
-												<li><i class="fa-solid fa-calendar-check"></i> Regular Check-ins</li>
-												<li><i class="fa-solid fa-book-open"></i> Study Material Design</li>
+												<li><i class="fa-solid fa-earth-americas" aria-hidden="true"></i> Virtual Worldwide</li>
+												<li><i class="fa-solid fa-user-graduate" aria-hidden="true"></i> In-Person in Delaware</li>
+												<li><i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Regular Check-ins</li>
+												<li><i class="fa-solid fa-book-open" aria-hidden="true"></i> Study Material Design</li>
 											</ul>
 
 											<div class="learn-more">
-												<!--p>Learn More</p-->
-												<button>Learn More</button>
+												<button class="toggle-btn" aria-expanded="false" aria-controls="instruction-expand">How It Works</button>
+												<div class="expand-content" id="instruction-expand" hidden>
+													<p>Every student learns differently, which is why we tailor each session to push the boundaries of your student’s current level, goals, and learning styles.</p>
+
+													<ul>
+														<li><strong>1-on-1 Tutoring:</strong> Focused sessions designed to target specific challenges and build confidence</li>
+														<li><strong>Guided Problem Solving:</strong> Students actively work through problems with support, rather than passively watching</li>
+														<li><strong>Check-ins & Progress Tracking:</strong> Regular feedback to ensure concepts are understood and retained</li>
+														<li><strong>Custom Study Materials:</strong> Practice problems and notes designed specifically for each student</li>
+													</ul>
+
+													<p>Our goal is not just to help students complete assignments, but to develop the skills and mindset needed to approach new problems independently.</p>
+												</div>
 											</div>
 										</div>
 
@@ -132,24 +159,38 @@
 											<p class="service-desc">We offer experience in test-prep, applying to schools, and developing careers to provide clarity while ensuring we bring the most relevant insights based on current trends. </p>
 
 											<ul>
-												<li><i class="fa-solid fa-book"></i> AP Exam Prep</li>
-												<li><i class="fa-solid fa-graduation-cap"></i> SAT/ACT</li>
-												<li><i class="fa-solid fa-pen"></i> Essay Consults</li>
+												<li><i class="fa-solid fa-book" aria-hidden="true"></i> AP Exam Prep</li>
+												<li><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> SAT/ACT</li>
+												<li><i class="fa-solid fa-pen" aria-hidden="true"></i> Essay Consults</li>
 											</ul>
 											<div class="learn-more">
-												<!--p>Learn More</p-->
-												<button>Learn More</button>
+												<button class="toggle-btn" aria-expanded="false" aria-controls="college-prep-expand">Explore College Prep</button>
+												<div class="expand-content" id="college-prep-expand" hidden>
+													<p>We support students through key academic decisions that shape their future while offering paths ahead and resources for increasing opportunities in their respective fields.</p>
+
+													<ul>
+														<li><strong>AP Exam Preparation:</strong> Targeted review, problem-solving strategies and dedicated coaching.</li>
+														<li><strong>SAT/ACT Support:</strong> Focused preparation with an emphasis on efficiency and accuracy.</li>
+														<li><strong>Essay Feedback:</strong> Constructive feedback to help students communicate their ideas clearly and effectively</li>
+														<li><strong>Career Trends:</strong> We stay up-to-date on the latest trends to discuss potential paths and outlooks.</li>
+													</ul>
+
+													<p>We focus on helping students approach these challenges with clarity and confidence, while adapting to currently relevant expectations and standards.</p>
+												</div>
 											</div>
 										</div>
+
+
+
 									</div>
 								</div>
 								
 							</section>
 							<hr>
 						<!-- Three -->
-							<section class="content-section" id="pricing">
+							<section class="content-section fade-in-section" id="pricing">
 								<div class="container even">
-									<h3 id="pricing-header">Pricing</h3>
+									<h2 id="pricing-header">Pricing</h2>
 										<div id="pricing-tiers">
 										<!--div class="price-table" role="region" tabindex="0"-->
 											
@@ -315,43 +356,48 @@
 								</div>
 							</section>
 							<hr>
-						<!-- Scholarships -->
-							<section class="content-section" id="ed-finances">
+						<!-- Resources -->
+							<section class="content-section fade-in-section" id="resources">
 								<div class="container odd">
-									
-									<h3>Education Finances</h3>
-									<div id="scholarship-content"></div>
+									<h2 id="ed-fin-header">Smart Planning for Education Costs</h2>
+									<p class="section-bridge">Strong academic performance can open doors to scholarships, advanced placement opportunities, and long-term savings on education costs.</p>
+									<div id="scholarship-content">
 
-										<div>
+										<div class="finance-card">
 											<h4>Scholarships</h4>
-											<p>Check your eligibility for the following scholarships, published by the <a href="https://educationdata.org/">Education Data Initiative</a>.</p>
+
+											<p>We believe academic success and smart planning go hand-in-hand. In addition to tutoring and college prep support, we provide a starting point for exploring scholarships and other education funding resources.</p>
+
+											<p>Explore these scholarship resources from the <a href="https://educationdata.org/">Education Data Initiative</a> to identify opportunities for high school seniors, incoming college students, and more.</p>
+
 
 											<ul>
 
-												<li><mark style="color: white;">(Outdated, EDI may update soon)</mark> <a href="https://educationdata.org/scholarships-for-high-school-seniors">Scholarships for High School Seniors</a></li>
+												<li><span class="resource-note">(May be outdated)</span> <a href="https://educationdata.org/scholarships-for-high-school-seniors">Scholarships for High School Seniors</a></li>
 
 												<li><a href="https://educationdata.org/scholarships-for-college-freshman">2026 Scholarships College Freshman</a></li>
 
 												<li><a href="https://educationdata.org/no-essay-scholarships">2026 General No-Essay Scholarships</a></li>
 
-												<li><mark style="color: white;">(Outdated, EDI may update soon)</mark> <a href="https://educationdata.org/scholarships-for-graduate-students">Scholarships for Grad Students</a></li>
+												<li><span class="resource-note">(May be outdated)</span> <a href="https://educationdata.org/scholarships-for-graduate-students">Scholarships for Grad Students</a></li>
 
 											</ul>
 										</div>
 
-										<!--div>
-											<h4>Saving</h4>
-											<p>Wouldn't it be nice if the money you save for your child's education grew like a 401k? Well it can with a 529 plan!</p>
+										<div class="finance-card">
+											<h4>Saving for Education</h4>
+											<p>Many families use 529 plans as a tax-advantaged way to save for future education expenses. Use the tool below to explore your state’s official plan information and learn more about potential benefits.</p>
 
-											<p>Select your state from the drop-down, then click submit to learn more.</p>
+											<p id="disclaimer">These resources are provided for general informational purposes. Families should review official program details and consult qualified financial professionals when needed. </p>
+
 
 											<div class="plan529-cap"></div>
 
 											<div class="plan529-content">
 												<h2 id="plan529-title">Find Your State’s 529 Plan</h2>
-												<p class="plan529-text">
-												Select your state to view official 529 plan information and compare next steps for saving toward education costs.
-												</p>
+												<p class="plan529-text">Select your state to view official 529 plan information and explore next steps for saving toward education costs.</p>
+
+												<p class="plan529-note">Note: Many families consider their home-state plan first. Some states allow non-residents to open 529 accounts and may offer their own tax benefits or other incentives.</p>
 
 												<div class="plan529-form">
 													<label for="state529" class="sr-only">Select your state</label>
@@ -407,31 +453,54 @@
 														<option value="washington">Washington</option>
 														<option value="west-virginia">West Virginia</option>
 														<option value="wisconsin">Wisconsin</option>
-														<option value="wyoming">Wyoming</option>
+														<option value="wyoming">Wyoming (No 529)</option>
 													</select>
 
-													<button type="button" id="go529Btn">View Plan</button>
+													<button type="button" id="open529Link">View Plan</button>
 												</div>
 
-											<p class="plan529-note">
-											Many families consider their home-state plan first because some states may offer state tax benefits or other incentives.
-											</p>
-
-											<p class="plan529-disclaimer">
-											529 plans are tax-advantaged education savings plans. Benefits, fees, investment options, and eligibility rules vary by state. Review official plan information before investing.
-											</p>
-										</div-->
-
+												<p class="plan529-disclaimer" style="margin-top: 1em;">529 plans are tax-advantaged education savings plans. Benefits, fees, investment options, and eligibility rules vary by state. Review official plan information before investing.</p>
+											</div>
+										</div>
 									</div>
 								</div>
 							</section>
-						<hr>
+							<hr>
 
+							<section class="content-section fade-in-section" id="aboutus">
+								<div class="container even">
+
+									<h2 id="about-us-header">About Us</h2>
+
+									<div id="short-description">
+										<p class="about-us-description">At Northmind Studies, we help students build strong foundations in mathematics, science, and problem-solving—from middle school through college-level coursework.</p>
+
+										<p class="about-us-description">With over a decade of experience, we focus on developing deep understanding, confidence, and independent thinking. Our personalized approach ensures each student learns in a way that works best for them while gaining the skills to tackle new challenges on their own.</p>
+									</div>
+
+									<div id="long-description" hidden>
+										<p class="about-us-description">At Northmind Studies, we bring over a decade of tutoring and teaching experience spanning middle school through university-level mathematics and science. We specialize in helping students build strong foundations in subjects such as algebra, calculus, physics, computer science, and advanced problem-solving.</p>
+
+										<p class="about-us-description">Our approach goes beyond memorization. We focus on developing deep understanding, critical thinking, and the confidence students need to tackle challenging concepts independently. Whether preparing for exams, strengthening core skills, or pursuing advanced coursework, each session is tailored to meet students where they are and help them grow.</p>
+
+										<p class="about-us-description">We believe there is no one-size-fits-all approach to learning. That’s why we incorporate a variety of instructional methods to match each student’s strengths while also helping them adapt to new ways of thinking. By learning to approach problems from multiple perspectives, students become more flexible, resilient, and effective learners; skills that extend far beyond the classroom.</p>
+
+										<p class="about-us-description">With a background in applied mathematics and research-driven problem solving, we bring both academic rigor and practical insight into every lesson. At Northmind Studies, our mission is to empower students not only to succeed in their current courses, but to develop the independence and confidence needed to thrive in STEM and beyond.</p>
+									</div>
+
+									<button type="button" 
+											class="about-us-expand"
+											aria-expanded="false"
+        									aria-controls="long-description">Learn More</button>
+									
+								</div>
+							</section>
+							<hr>
 						<!-- Consultation -->
-							<section class="content-section" id="consultation">
+							<section class="content-section fade-in-section" id="consultation">
 									<div class="container even">
-										<h3 id="consult-header">Book a Free Consultation</h3>
-										<p>Select a date/time, fill out a few basic questions and we will be on our way!</p>
+										<h2 id="consult-header">Book a Free Consultation</h2>
+										<p id="consult-description">Select a date/time, fill out a few basic questions and we will reach out to you as soon as possible.</p>
 										<!-- Calendly inline widget begin -->
 										<div class="calendly-inline-widget" 
 											data-url="https://calendly.com/northmindstudies/free-15-minute-consultation" 
@@ -440,29 +509,59 @@
 										<!-- Calendly inline widget end -->
 									</div>
 							</section>
-					</div>
-
+					</main>
 				<!-- Footer -->
-					<section id="footer">
+					<section class="fade-in-section" id="footer">
+						<img src="images/transparent_compass_sqaure.png" alt=""/>
 						<div id="contact-info">
 							<p class="contact" id="ns-name"><span id="northmind">Northmind</span> <span id="studies">Studies</span></p>
 							<p class="contact" id="email">info.northmindstudies@gmail.com</p>
 							<p class="contact" id="phone">610-638-9442</p>
 						</div>
 						<ul class="icons">
-							<li><a href="https://www.instagram.com/northmindstudies/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="https://www.facebook.com/northmindstudies0" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-							<li><a href="https://www.linkedin.com/company/northmind-studies" class="fa-brands fa-linkedin"><span class="label"></span></a></li>
-							<li><a href="mailto:info.northmindstudies@gmail.com" class="fa-regular fa-envelope"><span class="label"></span></a></li>
-							<li><a href="tel:+16106389442" class="fa-solid fa-phone"><span class="label"></span></a></li>
+							<li>
+								<a href="https://www.instagram.com/northmindstudies/" aria-label="Northmind Studies on Instagram">
+									<i class="fa-brands fa-instagram" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.facebook.com/northmindstudies0" aria-label="Northmind Studies on Facebook">
+									<i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/company/northmind-studies" aria-label="Northmind Studies on LinkedIn">
+									<i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="mailto:info.northmindstudies@gmail.com" aria-label="Email Northmind Studies">
+									<i class="fa-regular fa-envelope" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="tel:+16106389442" aria-label="Call Northmind Studies">
+									<i class="fa-solid fa-phone" aria-hidden="true"></i>
+								</a>
+							</li>
 						</ul>
 						<div>
 							<ul class="copyright">
-								<li>&copy; Northmind Studies 2025. All rights reserved.</li>
+								<li>&copy; Northmind Studies 2026. All rights reserved.</li>
 							</ul>
+							<div class="legal-stuff">
+								<div id="legal-div">
+									<a href="privacy.html">Privacy Policy</a>
+								</div>
+								<div id="legal-div">
+									<a href="terms.html">Terms &amp; Conditions</a>
+								</div>
+								<div id="legal-div">
+									<a href="accessibility.html">Accessibility</a>
+								</div>
+							</div>
 						</div>
 					</section>
-
 			</div>
 
 
@@ -470,21 +569,19 @@
 
 		<!-- Scripts -->
 			<script src="assets/js/navbar.js"></script>
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="assets/js/aboutus.js"></script>
+			<script src="assets/js/scrollfeature.js"></script>
 			<script src="assets/js/links529.js"></script>
 			<script src="https://web3forms.com/client/script.js" async defer></script>
 			<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 			<script src="assets/js/services-btn.js"></script>
-			
-			<!--script src="assets/js/contactus.js"></script-->
-			<!--script src="assets/js/regform.js"></script-->
-			<!--script src="https://assets.calendly.com/assets/external/widget.js" async></script-->
+			<!--script src="assets/js/jquery.min.js"></script-->
+			<!--script src="assets/js/jquery.scrollex.min.js"></script-->
+			<!--script src="assets/js/jquery.scrolly.min.js"></script-->
+			<!--script src="assets/js/browser.min.js"></script-->
+			<!--script src="assets/js/breakpoints.min.js"></script-->
+			<!--script src="assets/js/util.js"></script-->
+			<!--script src="assets/js/main.js"></script-->
 	</body>
 
 </html>

@@ -1,74 +1,67 @@
 const state529Links = {
-  "alabama": "https://www.collegesavings.org/plans/alabama",
-  "alaska": "https://www.collegesavings.org/plans/alaska",
-  "arizona": "https://www.collegesavings.org/plans/arizona",
-  "arkansas": "https://www.collegesavings.org/plans/arkansas",
-  "california": "https://www.collegesavings.org/plans/california",
-  "colorado": "https://www.collegesavings.org/plans/colorado",
-  "connecticut": "https://www.collegesavings.org/plans/connecticut",
-  "delaware": "https://www.collegesavings.org/plans/delaware",
-  "district-of-columbia": "https://www.collegesavings.org/plans/district-of-columbia",
-  "florida": "https://www.collegesavings.org/plans/florida",
-  "georgia": "https://www.collegesavings.org/plans/georgia",
-  "hawaii": "https://www.collegesavings.org/plans/hawaii",
-  "idaho": "https://www.collegesavings.org/plans/idaho",
-  "illinois": "https://www.collegesavings.org/plans/illinois",
-  "indiana": "https://www.collegesavings.org/plans/indiana",
-  "iowa": "https://www.collegesavings.org/plans/iowa",
-  "kansas": "https://www.collegesavings.org/plans/kansas",
-  "kentucky": "https://www.collegesavings.org/plans/kentucky",
-  "louisiana": "https://www.collegesavings.org/plans/louisiana",
-  "maine": "https://www.collegesavings.org/plans/maine",
-  "maryland": "https://www.collegesavings.org/plans/maryland",
-  "massachusetts": "https://www.collegesavings.org/plans/massachusetts",
-  "michigan": "https://www.collegesavings.org/plans/michigan",
-  "minnesota": "https://www.collegesavings.org/plans/minnesota",
-  "mississippi": "https://www.collegesavings.org/plans/mississippi",
-  "missouri": "https://www.collegesavings.org/plans/missouri",
-  "montana": "https://www.collegesavings.org/plans/montana",
-  "nebraska": "https://www.collegesavings.org/plans/nebraska",
-  "nevada": "https://www.collegesavings.org/plans/nevada",
-  "new-hampshire": "https://www.collegesavings.org/plans/new-hampshire",
-  "new-jersey": "https://www.collegesavings.org/plans/new-jersey",
-  "new-mexico": "https://www.collegesavings.org/plans/new-mexico",
-  "new-york": "https://www.collegesavings.org/plans/new-york",
-  "north-carolina": "https://www.collegesavings.org/plans/north-carolina",
-  "north-dakota": "https://www.collegesavings.org/plans/north-dakota",
-  "ohio": "https://www.collegesavings.org/plans/ohio",
-  "oklahoma": "https://www.collegesavings.org/plans/oklahoma",
-  "oregon": "https://www.collegesavings.org/plans/oregon",
-  "pennsylvania": "https://www.collegesavings.org/plans/pennsylvania",
-  "rhode-island": "https://www.collegesavings.org/plans/rhode-island",
-  "south-carolina": "https://www.collegesavings.org/plans/south-carolina",
-  "south-dakota": "https://www.collegesavings.org/plans/south-dakota",
-  "tennessee": "https://www.collegesavings.org/plans/tennessee",
-  "texas": "https://www.collegesavings.org/plans/texas",
-  "utah": "https://www.collegesavings.org/plans/utah",
-  "vermont": "https://www.collegesavings.org/plans/vermont",
-  "virginia": "https://www.collegesavings.org/plans/virginia",
-  "washington": "https://www.collegesavings.org/plans/washington",
-  "west-virginia": "https://www.collegesavings.org/plans/west-virginia",
-  "wisconsin": "https://www.collegesavings.org/plans/wisconsin",
-  "wyoming": "https://www.collegesavings.org/plans/wyoming"
+  "alabama": "https://www.collegecounts529.com/",
+  "alaska": "https://www.alaska529plan.com/",
+  "arizona": "https://www.az529.gov/",
+  "arkansas": "https://www.arkansas529.org/",
+  "california": "https://www.scholarshare529.com/",
+  "colorado": "https://www.collegeinvest.org/",
+  "connecticut": "https://www.aboutchet.com/",
+  "delaware": "https://treasurer.delaware.gov/education-savings-plan/",
+  "district-of-columbia": "https://www.dccollegesavings.com/",
+  "florida": "https://www.myfloridaprepaid.com/",
+  "georgia": "https://www.path2college529.com/",
+  "hawaii": "https://www.hi529.com/",
+  "idaho": "https://www.idsaves.org/",
+  "illinois": "https://www.brightstart.com/",
+  "indiana": "https://www.indiana529direct.com/",
+  "iowa": "https://www.isave529.com/",
+  "kansas": "https://www.quest529.com/",
+  "kentucky": "https://www.kysaves.com/home.html",
+  "louisiana": "https://www.startsaving.la.gov/",
+  "maine": "https://www.nextgenforme.com/",
+  "maryland": "https://maryland529.com/",
+  "massachusetts": "https://www.fidelity.com/529-plans/massachusetts",
+  "michigan": "https://www.misaves.com/",
+  "minnesota": "https://www.mnsaves.org/",
+  "mississippi": "https://treasury.ms.gov/for-citizens/college-savings-mississippi/for-parents/learn/macs/",
+  "missouri": "https://www.missourimost.org/",
+  "montana": "https://www.achievemontana.com/",
+  "nebraska": "https://www.nest529.com/",
+  "nevada": "https://nvigate.gov/programs/nevadas-529-plans/",
+  "new-hampshire": "https://www.treasury.nh.gov/residents/529-college-savings-program",
+  "new-jersey": "https://www.njbest.com/",
+  "new-mexico": "https://hed.nm.gov/financial-aid/new-mexico-529-college-savings-plan",
+  "new-york": "https://www.nysaves.org/",
+  "north-carolina": "https://www.cfnc.org/",
+  "north-dakota": "https://www.collegesave4u.com/",
+  "ohio": "https://www.collegeadvantage.com/",
+  "oklahoma": "https://www.oklahoma529.com/",
+  "oregon": "https://embarksavings.com/",
+  "pennsylvania": "https://www.pa529.com/",
+  "rhode-island": "https://treasury.ri.gov/programs/collegebound-saver-529-plan-0",
+  "south-carolina": "https://www.futurescholar.com/",
+  "south-dakota": "https://www.collegeaccess529.com/",
+  "tennessee": "https://tnstars.treasury.tn.gov/",
+  "texas": "https://www.texascollegesavings.com/",
+  "utah": "https://my529.org/",
+  "vermont": "https://vt529.org/",
+  "virginia": "https://www.virginia529.com/",
+  "washington": "https://wastate529.wa.gov/",
+  "west-virginia": "https://www.smart529.com/",
+  "wisconsin": "https://dfi.wi.gov/Pages/EducationalServices/CollegeSavingsCareerPlanning/CollegeSavingsProgram.aspx",
+  "wyoming": ""
 };
 
 const stateSelect = document.getElementById("state529");
-const go529Btn = document.getElementById("go529Btn");
+const open529Button = document.getElementById("open529Link");
 
-/*go529Btn.addEventListener("click", () => {
-  const selectedState = stateSelect.value;
+if (stateSelect && open529Button) {
+	open529Button.addEventListener("click", function () {
+		const selectedState = stateSelect.value;
+		const url = state529Links[selectedState];
 
-  if (!selectedState || !state529Links[selectedState]) {
-    alert("Please select a state first.");
-    return;
-  }
-
-  window.open(state529Links[selectedState], "_blank");
-});*/
-
-stateSelect.addEventListener("change", () => {
-  const selectedState = stateSelect.value;
-  if (selectedState && state529Links[selectedState]) {
-    window.open(state529Links[selectedState], "_blank");
-  }
-});
+		if (url) {
+			window.open(url, "_blank", "noopener");
+		}
+	});
+}

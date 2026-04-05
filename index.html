@@ -19,154 +19,488 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<!--meta name="viewport" content="width=device-width, initial-scale=1.0"-->
-        <link rel="icon" type="image/png" href="images/transparent-logo-square.png"> 
-		<link rel="stylesheet" href="assets/css/main.css" />
+        <link rel="icon" type="image/png" href="images/transparent_compass_sqaure.png"> 
+		<!--link rel="stylesheet" href="assets/css/main.css" /-->
+		<link rel="stylesheet" href="assets/css/main_mobile1st.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+		
+		<!-- Fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Menbere:wght@100..700&display=swap" rel="stylesheet">
+
 	</head>
 	<body class="is-preload">
+		<a href="#main" class="skip-link">Skip to main content</a>
 
 		<!-- Header -->
-			<section id="header">
-				<header>
-					<!--span class="image avatar"><img src="images/avatar.jpg" alt="" /></span-->
-					<span class="image avatar"><img src="images/colored-logo.png" alt="" /></span>
-					<!--h1 id="logo"><a href="#">Northmind Studies</a></h1-->
-					<h5><em>Virtual tutoring worldwide, in-person tutoring for Delawareans</em></h5>
-				</header>
-				<nav id="nav">
-					<ul>
-						<li><a href="#intro" class="active">Introduction</a></li>
-						<li><a href="#services">Services</a></li>
-						<li><a href="#pricing">Pricing</a></li>
-						<li><a href="#scholarships">Scholarship Lists</a></li>
-						<li><a href="#consultation">Consultation</a></li>
-					</ul>
-				</nav>
-				<footer>
-					<ul class="icons">
-						<!--li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li-->
-						<li><a href="https://www.instagram.com/northmindstudies/" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="https://www.facebook.com/northmindstudies0" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="https://www.linkedin.com/company/northmind-studies" class="fa-brands fa-linkedin"><span class="label"></span></a></li>
-						<li><a href="mailto:info.northmindstudies@gmail.com" class="fa-regular fa-envelope"><span class="label"></span></a></li>
-						<li><a href="tel:+16106389442" class="fa-solid fa-phone"><span class="label"></span></a></li>
-						<!--li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li-->
-						<!--li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li-->
-					</ul>
-				</footer>
+			<!-- Header -->
+			<section class="site-header" id="header1">
+				<a href="index.html" class="logo-link">
+					<img src="images/full_logo_transparent_square.png" alt="Northmind Studies compass logo" class="logo" />
+				</a>
+
+				<button class="menu-toggle" aria-label="Open menu" 
+				        aria-expanded="false" aria-controls="site-nav">
+					☰
+				</button>
+
+				<div class="nav-overlay">
+					<nav id="site-nav" class="site-nav">
+						<div id="navbar-fill">
+							<img src="images/transparent_compass_sqaure.png" alt="" class="navbar-fill-logo"/>
+						</div>
+						<div>
+							<ul class="nav-list">
+								<li><a href="#intro" class="nav-a">Intro</a></li>
+								<li><a href="#services" class="nav-a">Services</a></li>
+								<li><a href="#pricing" class="nav-a">Pricing</a></li>
+								<li><a href="#resources" class="nav-a">Resources</a></li>
+								<li><a href="#aboutus" class="nav-a">About</a></li>
+								<li><a href="#consultation" class="nav-a">Consultation</a></li>
+								<li><a href="#footer" class="nav-a">Contact</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
 			</section>
 
 		<!-- Wrapper -->
 			<div id="wrapper">
 
 				<!-- Main -->
-					<div id="main">
-
-						<!-- One -->
-							<section id="intro">
-								<div class="image main" data-position="center">
-									<!--img src="images/banner.jpg" alt="" /-->
-									<img src="images/transparent-logo.png" alt="logo">
-								</div>
-								<div class="container">
-									<header class="major">
-										<h3>Chase Excellence and Success Will Follow</h3>
-										<p><!--a href="http://html5up.net">HTML5 UP</a--></p>
-									</header>
-									<p>We offer 10+ years of experience including private tutoring, test prep, and college-level instruction which we use to adapt to your learning style. Whether you're catching up or getting ahead, we work to ensure understanding in your subjects to provide the tools you need to pursue your education confidently with full independence.</p>
-								</div>
-							</section>
-
-						<!-- Two -->
-							<section id="services">
-								<div class="container">
-									<h3 style="color: #0f1765">Services</h3>
-									<p>Here are a few of the subjects we can help with:</p>
-									<ul class="feature-icons">
-										<!--li class="icon solid fa-plus">Pre-Calculus</li-->
-										<li class="icon solid fa-infinity">Pre-Calculus, Calculus I, II & III</li>
-										<li class="icon solid fa-subscript">Linear Algebra</li>
-										<li class="icon solid fa-percent">Statistics</li>
-										<li class="icon solid fa-laptop-code">Computer Science</li>
-										<li class="icon solid fa-atom">Physics I & II</li>
-										<li class="icon solid fa-circle-notch">More to come!</li>
-									</ul>
-									<ul class="virtual-inperson">
-										<li>Virtual instruction available for all students worldwide.</li>
-										<li>In-person instruction currently only for residents of New Castle County (North) Delaware.</li>
-									</ul>
-									<p></p>
-								</div>
-							</section>
-
-						<!-- Three -->
-							<section id="pricing">
-								<div class="container">
-									<h3 style="color: #910101">Pricing</h3>
-									<!--- p>Straightforward pricing</p -->
-									<!-- h4>Limited Time Offer: $5/hour discount for every new client referred, up to a maximum of $20/hour off.</h4 -->
-									<div class="price-table" role="region" tabindex="0">
-											<table>
-												<!--caption>
-													<p>Hourly prices</p>
-												</caption-->
-												<thead>
-													<tr>
-														<th>Instructional Mode</th>
-														<th>Regular (1 hour/week)</th>
-														<th>Plus (2+ hours/week)</th>
-														<th>As-Needed</th>
-													</tr>
-												</thead>
-												<tbody>
-													<tr>
-														<td>Virtual</td>
-														<td>$80/hour</td>
-														<td>$60/hour</td>
-														<td>$80/hour</td>
-													</tr>
-													<tr>
-														<td>In-Person (Delaware)</td>
-														<td>$90/hour</td>
-														<td>$70/hour</td>
-														<td>$90/hour</td>
-													</tr>
-												</tbody>
-											</table>
+					<main id="main"> 
+						<!-- Intro -->
+							<section class="content-section fade-in-section" id="intro">
+								<div class="container even">
+									<h1 id="intro-header">Chase Excellence & Success Follows</h1>
+									<div id="intro-paragraph">
+										<!-- We offer 10+ years of experience including private tutoring, test prep, and college-level instruction which we use to adapt to your learning style. -->
+										<p>Whether you're catching up or getting ahead, we work to ensure understanding in your subjects to provide the tools you need to pursue your education confidently with full independence.</p>
 									</div>
-									<ul class="group-tutoring">
+								</div>
+							</section>
+
+							<hr>
+
+						<!-- Services -->
+							<section class="content-section fade-in-section" id="services">
+								<div class="container odd" id="services-card-containers">
+
+									<h2 id="service-header">Services</h2>
+									<div id="service-intro-p">
+										<p>We provide rigorous and quality academic tutoring and offer other services to support your student!</p>
+									</div>
+
+									<div id="open-services">
+										<div class="service-listing" id="subjects-listing">
+											<img id="emc-squared-img" src="images/stem_square.jpg" alt="Mathematical equations sprawled across a green board. Einstein's famous equation from special relativity, E=mc^2, most prominently depicted.">
+											<h4>Subjects</h4>
+											<p class="service-desc">While we specialize in STEM, we also offer to provide resources and connections for your child seeking assistance in English, Social Studies, History, Writing and other subjects.</p>
+											<ul>
+												<li><i class="fa-solid fa-infinity" aria-hidden="true"></i> Mathematics</li>
+												<li><i class="fa-solid fa-atom" aria-hidden="true"></i> Physics</li>
+												<li><i class="fa-solid fa-laptop-code" aria-hidden="true"></i> Computer Science</li>
+											</ul>
+											<div class="learn-more">
+												<button class="toggle-btn" aria-expanded="false" aria-controls="subjects-expand">View Subjects</button>
+												<div class="expand-content" id="subjects-expand" hidden>
+													<p>We offer support across a wide range of STEM subjects, with a focus on building strong conceptual understanding rather than rote memorization.</p>
+
+													<ul>
+														<li><strong>Mathematics:</strong> Pre-Algebra, Algebra I & II, Geometry, Trigonometry, Pre-Calculus, Calculus I & II (AP Calc AB & BC), Linear Algebra, Statistics</li>
+														<li><strong>Physics:</strong> High school and introductory college physics, including mechanics, electricity & magnetism</li>
+														<li><strong>Computer Science:</strong> Introductory programming, logical thinking, Python, Data Science, and problem-solving fundamentals</li>
+													</ul>
+
+													<p>If your student needs help outside of these areas, we are happy to provide guidance or connect you with trusted resources in subjects such as English, writing, and social studies.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="service-listing">
+											<img id="study-img" src="images/study_square.jpg" alt="A laptop, textbook, a few notebooks, pen and a coffee mug resting on a desk. A set up for a nice study session.">
+
+											<h4>Instruction</h4>
+
+											<p class="service-desc">We provide various means of engaging with your student from traditional sessions to additional checks-on-understanding to ensure concept mastery.</p>
+
+											<ul>
+												<li><i class="fa-solid fa-earth-americas" aria-hidden="true"></i> Virtual Worldwide</li>
+												<li><i class="fa-solid fa-user-graduate" aria-hidden="true"></i> In-Person in Delaware</li>
+												<li><i class="fa-solid fa-calendar-check" aria-hidden="true"></i> Regular Check-ins</li>
+												<li><i class="fa-solid fa-book-open" aria-hidden="true"></i> Study Material Design</li>
+											</ul>
+
+											<div class="learn-more">
+												<button class="toggle-btn" aria-expanded="false" aria-controls="instruction-expand">How It Works</button>
+												<div class="expand-content" id="instruction-expand" hidden>
+													<p>Every student learns differently, which is why we tailor each session to push the boundaries of your student’s current level, goals, and learning styles.</p>
+
+													<ul>
+														<li><strong>1-on-1 Tutoring:</strong> Focused sessions designed to target specific challenges and build confidence</li>
+														<li><strong>Guided Problem Solving:</strong> Students actively work through problems with support, rather than passively watching</li>
+														<li><strong>Check-ins & Progress Tracking:</strong> Regular feedback to ensure concepts are understood and retained</li>
+														<li><strong>Custom Study Materials:</strong> Practice problems and notes designed specifically for each student</li>
+													</ul>
+
+													<p>Our goal is not just to help students complete assignments, but to develop the skills and mindset needed to approach new problems independently.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="service-listing" id="college-prep-listing">
+											<img id="grad-img" src="images/grad_square.jpg" alt="A group of seven students in their graduation attire tossing their caps in celebration while in a field looking towards the open sky.">
+
+											<h4>College Prep</h4>
+
+											<p class="service-desc">We offer experience in test-prep, applying to schools, and developing careers to provide clarity while ensuring we bring the most relevant insights based on current trends. </p>
+
+											<ul>
+												<li><i class="fa-solid fa-book" aria-hidden="true"></i> AP Exam Prep</li>
+												<li><i class="fa-solid fa-graduation-cap" aria-hidden="true"></i> SAT/ACT</li>
+												<li><i class="fa-solid fa-pen" aria-hidden="true"></i> Essay Consults</li>
+											</ul>
+											<div class="learn-more">
+												<button class="toggle-btn" aria-expanded="false" aria-controls="college-prep-expand">Explore College Prep</button>
+												<div class="expand-content" id="college-prep-expand" hidden>
+													<p>We support students through key academic decisions that shape their future while offering paths ahead and resources for increasing opportunities in their respective fields.</p>
+
+													<ul>
+														<li><strong>AP Exam Preparation:</strong> Targeted review, problem-solving strategies and dedicated coaching.</li>
+														<li><strong>SAT/ACT Support:</strong> Focused preparation with an emphasis on efficiency and accuracy.</li>
+														<li><strong>Essay Feedback:</strong> Constructive feedback to help students communicate their ideas clearly and effectively</li>
+														<li><strong>Career Trends:</strong> We stay up-to-date on the latest trends to discuss potential paths and outlooks.</li>
+													</ul>
+
+													<p>We focus on helping students approach these challenges with clarity and confidence, while adapting to currently relevant expectations and standards.</p>
+												</div>
+											</div>
+										</div>
+
+
+
+									</div>
+								</div>
+								
+							</section>
+							<hr>
+						<!-- Three -->
+							<section class="content-section fade-in-section" id="pricing">
+								<div class="container even">
+									<h2 id="pricing-header">Pricing</h2>
+										<div id="pricing-tiers">
+										<!--div class="price-table" role="region" tabindex="0"-->
+											
+											<div class="tier-card" id="standard-tier">
+
+												<div class="tier-cap-fill">
+													<p class="tier-category-txt">Standard</p>
+												</div>
+
+												<div class="cost-val-div">
+													<p class="cost-val-text">$96/hour</p>
+												</div>
+
+												<div class="description">
+													<p>Perfect for normal course-work, homework help, promoting understanding, in-class exam prep. Typically scheduled only 1 hour/week; max 4 hours/week. </p>
+												</div>
+
+												<div class="tier-card-content">
+													<ul>
+														<li>Academic tutoring.</li>
+														<li>Cram sessions.</li>
+														<li>Regular check-ins.</li>
+														<li id="no-bottom-border">Multi-session pricing</li>
+														<ul>
+															<li>25% off 2+ hours/week.</li>
+														</ul>
+													</ul>
+												</div>
+
+											</div>
+
+											<div class="tier-card" id="ap-prep-tier">
+												
+												<div class="tier-cap-fill">
+													<p class="tier-category-txt">AP Prep</p>
+												</div>
+												
+												<div class="cost-val-div">
+													<p class="cost-val-text">$168/hour</p>
+												</div>
+
+												<div class="description">
+													<p>Prep includes diagnostics, extra instruction to solidify understanding, curated practices, semi-weekly check-ins for progress, all personalized to maximize your student's score.</p>
+												</div>
+
+												<div class="tier-card-content">
+													<ul>
+														<li>Up to 2 hours/week of instruction.</li>
+														<li>Personalized study plan.</li>
+														<li id="no-bottom-border">Comprehensive AP Prep for one of any</li>
+														<ul>
+															<li>Math/Stats course</li>
+															<li>Comp Sci course</li>
+															<li>Physics course</li>
+														</ul>
+														
+													</ul>
+												</div>
+												
+												
+											</div>
+
+											<div class="tier-card" id="college-consult-tier">
+												
+												<div class="tier-cap-fill">
+													<p class="tier-category-txt">College Prep</p>
+												</div>
+												
+												<div class="cost-val-div">
+													<p class="cost-val-text">$96/hour</p>
+												</div>
+
+												<div class="description">
+													<p>Help your child determine an optimal path towards higher education and discuss careers including hard-hitting topics such as uncertainty surrounding artificial intelligence (AI).</p>
+												</div>
+
+												<div class="tier-card-content">
+													<ul>
+														<li>SAT/ACT Prep</li>
+														<li>Essay consults.</li>
+														<li>Course planning.</li>
+														<li>Extra-curriculars.</li>
+														<li id="no-bottom-border">Career discussions.</li>
+													</ul>
+												</div>
+												
+											</div>
+
+										</div>
+
+										<div id="pricing-tiers-nonstandard" class="hidden-tiers">
+											<div class="tier-card" id="custom-study-tier">
+												<div class="tier-cap-fill">
+													<p class="tier-category-txt">Custom Study</p>
+												</div>
+
+												<div class="cost-val-div">
+													<p class="cost-val-text">$72/week</p>
+												</div>
+
+												<div class="description">
+													<p>Does you student just need some extra material to study? We can help provide extra practice problems and materials with new perspectives to expand your student's learning.</p>
+												</div>
+
+												<div class="tier-card-content">
+													<ul>
+														<li>Course specific material design.</li>
+														<li>Extra practice w/ solutions.</li>
+														<li>Go above & beyond to improve understanding.</li>
+														<li id="no-bottom-border">Tutoring separate (w/ bundled rate).</li>
+													</ul>
+												</div>
+												
+											</div>
+
+											<div class="tier-card" id="quick-hw-help-tier">
+												<div class="tier-cap-fill">
+													<p class="tier-category-txt">HW Help</p>
+												</div>
+
+												<div class="cost-val-div">
+													<p class="cost-val-text">$20/session</p>
+												</div>
+
+												<div class="description">
+													<p>Stuck on a few homework problems? Need explanations for why and how to apply certain concepts? Perhaps a quick suggestion to boost your class projects? </p>
+												</div>
+
+												<div class="tier-card-content">
+													<ul>
+														<li>Quick support</li>
+														<li>Get hints & paths forward</li>
+														<li>Limit:</li>
+														<ul>
+															<li>Two 20-min non-consecutive sessions per week.</li>
+														</ul>
+													</ul>
+												</div>
+											</div>
+										</div>
+										
+
+									<div class="pricing-learn">
+
+										<div class="pricing-learn-button">
+											<button id="nontrad-learn" 
+											aria-expanded="false" aria-controls="pricing-tiers-nonstandard">Small Services</button>
+										</div>
+
+										<!--div class="pricing-learn-button">
+											<button id="group-rate-learn">Group Rates</button>
+										</div-->
+
+									</div>
+
+									<!--ul>
 										<li>We offer group tutoring (2-4 students) for which the fees above are split among the participants evenly.</li>
-											<ul class="group-tutoring example">
+											<ul>
 												<li>For example, three students participating virtually 2+ hours a week will each contribute $20/hour.</li>
 												<li>Rates adjust for groups larger than 4 students, with a maximum of 8 students allowed per session.</li>
 											</ul>
-									</ul>
+									</ul-->
 								</div>
 							</section>
-						
-						<!-- Scholarships -->
-						<section id="scholarships">
-								<div class="container">
-									<h3 style="color: #0f1765">Scholarship Lists</h3>
-									<p>Check your eligibility for the following scholarships, published by the <a href="https://educationdata.org/">Education Data Initiative</a>.</p>
-									<ul>
-										<li><mark style="color: white;">(Outdated, EDI may update soon)</mark> <a href="https://educationdata.org/scholarships-for-high-school-seniors">Scholarships for High School Seniors</a></li>
-										<li><a href="https://educationdata.org/scholarships-for-college-freshman">2026 Scholarships College Freshman</a></li>
-										<li><a href="https://educationdata.org/no-essay-scholarships">2026 General No-Essay Scholarships</a></li>
-										<li><mark style="color: white;">(Outdated, EDI may update soon)</mark> <a href="https://educationdata.org/scholarships-for-graduate-students">Scholarships for Grad Students</a></li>
-									</ul>
-									<!-- FINANCES for College -->
-									<h4>Coming Soon: More information about finances surrounding higher education.</h4>
-								</div>
-							</section>
-						
+							<hr>
+						<!-- Resources -->
+							<section class="content-section fade-in-section" id="resources">
+								<div class="container odd">
+									<h2 id="ed-fin-header">Smart Planning for Education Costs</h2>
+									<p class="section-bridge">Strong academic performance can open doors to scholarships, advanced placement opportunities, and long-term savings on education costs.</p>
+									<div id="scholarship-content">
 
+										<div class="finance-card">
+											<h4>Scholarships</h4>
+
+											<p>We believe academic success and smart planning go hand-in-hand. In addition to tutoring and college prep support, we provide a starting point for exploring scholarships and other education funding resources.</p>
+
+											<p>Explore these scholarship resources from the <a href="https://educationdata.org/">Education Data Initiative</a> to identify opportunities for high school seniors, incoming college students, and more.</p>
+
+
+											<ul>
+
+												<li><span class="resource-note">(May be outdated)</span> <a href="https://educationdata.org/scholarships-for-high-school-seniors">Scholarships for High School Seniors</a></li>
+
+												<li><a href="https://educationdata.org/scholarships-for-college-freshman">2026 Scholarships College Freshman</a></li>
+
+												<li><a href="https://educationdata.org/no-essay-scholarships">2026 General No-Essay Scholarships</a></li>
+
+												<li><span class="resource-note">(May be outdated)</span> <a href="https://educationdata.org/scholarships-for-graduate-students">Scholarships for Grad Students</a></li>
+
+											</ul>
+										</div>
+
+										<div class="finance-card">
+											<h4>Saving for Education</h4>
+											<p>Many families use 529 plans as a tax-advantaged way to save for future education expenses. Use the tool below to explore your state’s official plan information and learn more about potential benefits.</p>
+
+											<p id="disclaimer">These resources are provided for general informational purposes. Families should review official program details and consult qualified financial professionals when needed. </p>
+
+
+											<div class="plan529-cap"></div>
+
+											<div class="plan529-content">
+												<h2 id="plan529-title">Find Your State’s 529 Plan</h2>
+												<p class="plan529-text">Select your state to view official 529 plan information and explore next steps for saving toward education costs.</p>
+
+												<p class="plan529-note">Note: Many families consider their home-state plan first. Some states allow non-residents to open 529 accounts and may offer their own tax benefits or other incentives.</p>
+
+												<div class="plan529-form">
+													<label for="state529" class="sr-only">Select your state</label>
+													<select id="state529" name="state529">
+														<option value="">Choose a state</option>
+														<option value="alabama">Alabama</option>
+														<option value="alaska">Alaska</option>
+														<option value="arizona">Arizona</option>
+														<option value="arkansas">Arkansas</option>
+														<option value="california">California</option>
+														<option value="colorado">Colorado</option>
+														<option value="connecticut">Connecticut</option>
+														<option value="delaware">Delaware</option>
+														<option value="district-of-columbia">District of Columbia</option>
+														<option value="florida">Florida</option>
+														<option value="georgia">Georgia</option>
+														<option value="hawaii">Hawaii</option>
+														<option value="idaho">Idaho</option>
+														<option value="illinois">Illinois</option>
+														<option value="indiana">Indiana</option>
+														<option value="iowa">Iowa</option>
+														<option value="kansas">Kansas</option>
+														<option value="kentucky">Kentucky</option>
+														<option value="louisiana">Louisiana</option>
+														<option value="maine">Maine</option>
+														<option value="maryland">Maryland</option>
+														<option value="massachusetts">Massachusetts</option>
+														<option value="michigan">Michigan</option>
+														<option value="minnesota">Minnesota</option>
+														<option value="mississippi">Mississippi</option>
+														<option value="missouri">Missouri</option>
+														<option value="montana">Montana</option>
+														<option value="nebraska">Nebraska</option>
+														<option value="nevada">Nevada</option>
+														<option value="new-hampshire">New Hampshire</option>
+														<option value="new-jersey">New Jersey</option>
+														<option value="new-mexico">New Mexico</option>
+														<option value="new-york">New York</option>
+														<option value="north-carolina">North Carolina</option>
+														<option value="north-dakota">North Dakota</option>
+														<option value="ohio">Ohio</option>
+														<option value="oklahoma">Oklahoma</option>
+														<option value="oregon">Oregon</option>
+														<option value="pennsylvania">Pennsylvania</option>
+														<option value="rhode-island">Rhode Island</option>
+														<option value="south-carolina">South Carolina</option>
+														<option value="south-dakota">South Dakota</option>
+														<option value="tennessee">Tennessee</option>
+														<option value="texas">Texas</option>
+														<option value="utah">Utah</option>
+														<option value="vermont">Vermont</option>
+														<option value="virginia">Virginia</option>
+														<option value="washington">Washington</option>
+														<option value="west-virginia">West Virginia</option>
+														<option value="wisconsin">Wisconsin</option>
+														<option value="wyoming">Wyoming (No 529)</option>
+													</select>
+
+													<button type="button" id="open529Link">View Plan</button>
+												</div>
+
+												<p class="plan529-disclaimer" style="margin-top: 1em;">529 plans are tax-advantaged education savings plans. Benefits, fees, investment options, and eligibility rules vary by state. Review official plan information before investing.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+							<hr>
+
+							<section class="content-section fade-in-section" id="aboutus">
+								<div class="container even">
+
+									<h2 id="about-us-header">About Us</h2>
+
+									<div id="short-description">
+										<p class="about-us-description">At Northmind Studies, we help students build strong foundations in mathematics, science, and problem-solving—from middle school through college-level coursework.</p>
+
+										<p class="about-us-description">With over a decade of experience, we focus on developing deep understanding, confidence, and independent thinking. Our personalized approach ensures each student learns in a way that works best for them while gaining the skills to tackle new challenges on their own.</p>
+									</div>
+
+									<div id="long-description" hidden>
+										<p class="about-us-description">At Northmind Studies, we bring over a decade of tutoring and teaching experience spanning middle school through university-level mathematics and science. We specialize in helping students build strong foundations in subjects such as algebra, calculus, physics, computer science, and advanced problem-solving.</p>
+
+										<p class="about-us-description">Our approach goes beyond memorization. We focus on developing deep understanding, critical thinking, and the confidence students need to tackle challenging concepts independently. Whether preparing for exams, strengthening core skills, or pursuing advanced coursework, each session is tailored to meet students where they are and help them grow.</p>
+
+										<p class="about-us-description">We believe there is no one-size-fits-all approach to learning. That’s why we incorporate a variety of instructional methods to match each student’s strengths while also helping them adapt to new ways of thinking. By learning to approach problems from multiple perspectives, students become more flexible, resilient, and effective learners; skills that extend far beyond the classroom.</p>
+
+										<p class="about-us-description">With a background in applied mathematics and research-driven problem solving, we bring both academic rigor and practical insight into every lesson. At Northmind Studies, our mission is to empower students not only to succeed in their current courses, but to develop the independence and confidence needed to thrive in STEM and beyond.</p>
+									</div>
+
+									<button type="button" 
+											class="about-us-expand"
+											aria-expanded="false"
+        									aria-controls="long-description">Learn More</button>
+									
+								</div>
+							</section>
+							<hr>
 						<!-- Consultation -->
-							<section id="consultation"></section>
-									<div class="container">
-										<h3 id="consult-header" style="color: #910101">Book a Free Consultation</h3>
-										<p>Select a date/time, fill out a few basic questions and we will be on our way!</p>
+							<section class="content-section fade-in-section" id="consultation">
+									<div class="container even">
+										<h2 id="consult-header">Book a Free Consultation</h2>
+										<p id="consult-description">Select a date/time, fill out a few basic questions and we will reach out to you as soon as possible.</p>
 										<!-- Calendly inline widget begin -->
 										<div class="calendly-inline-widget" 
 											data-url="https://calendly.com/northmindstudies/free-15-minute-consultation" 
@@ -175,40 +509,79 @@
 										<!-- Calendly inline widget end -->
 									</div>
 							</section>
-					</div>
-
+					</main>
 				<!-- Footer -->
-					<section id="footer">
+					<section class="fade-in-section" id="footer">
+						<img src="images/transparent_compass_sqaure.png" alt=""/>
 						<div id="contact-info">
 							<p class="contact" id="ns-name"><span id="northmind">Northmind</span> <span id="studies">Studies</span></p>
 							<p class="contact" id="email">info.northmindstudies@gmail.com</p>
 							<p class="contact" id="phone">610-638-9442</p>
 						</div>
+						<ul class="icons">
+							<li>
+								<a href="https://www.instagram.com/northmindstudies/" aria-label="Northmind Studies on Instagram">
+									<i class="fa-brands fa-instagram" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.facebook.com/northmindstudies0" aria-label="Northmind Studies on Facebook">
+									<i class="fa-brands fa-facebook-f" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="https://www.linkedin.com/company/northmind-studies" aria-label="Northmind Studies on LinkedIn">
+									<i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="mailto:info.northmindstudies@gmail.com" aria-label="Email Northmind Studies">
+									<i class="fa-regular fa-envelope" aria-hidden="true"></i>
+								</a>
+							</li>
+							<li>
+								<a href="tel:+16106389442" aria-label="Call Northmind Studies">
+									<i class="fa-solid fa-phone" aria-hidden="true"></i>
+								</a>
+							</li>
+						</ul>
 						<div>
 							<ul class="copyright">
-								<li>&copy; Northmind Studies 2025. All rights reserved.</li>
+								<li>&copy; Northmind Studies 2026. All rights reserved.</li>
 							</ul>
+							<div class="legal-stuff">
+								<div id="legal-div">
+									<a href="privacy.html">Privacy Policy</a>
+								</div>
+								<div id="legal-div">
+									<a href="terms.html">Terms &amp; Conditions</a>
+								</div>
+								<div id="legal-div">
+									<a href="accessibility.html">Accessibility</a>
+								</div>
+							</div>
 						</div>
 					</section>
-
 			</div>
 
 
         
 
 		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+			<script src="assets/js/navbar.js"></script>
+			<script src="assets/js/aboutus.js"></script>
+			<script src="assets/js/scrollfeature.js"></script>
+			<script src="assets/js/links529.js"></script>
 			<script src="https://web3forms.com/client/script.js" async defer></script>
 			<script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-			<!--script src="assets/js/contactus.js"></script-->
-			<!--script src="assets/js/regform.js"></script-->
-			<!--script src="https://assets.calendly.com/assets/external/widget.js" async></script-->
+			<script src="assets/js/services-btn.js"></script>
+			<!--script src="assets/js/jquery.min.js"></script-->
+			<!--script src="assets/js/jquery.scrollex.min.js"></script-->
+			<!--script src="assets/js/jquery.scrolly.min.js"></script-->
+			<!--script src="assets/js/browser.min.js"></script-->
+			<!--script src="assets/js/breakpoints.min.js"></script-->
+			<!--script src="assets/js/util.js"></script-->
+			<!--script src="assets/js/main.js"></script-->
 	</body>
 
 </html>

@@ -1,0 +1,66 @@
+/* Math Service 
+const btn1 = document.querySelector("#services-toggle-subjects");
+const list1 = document.querySelector("#services-list-subjects");
+
+btn1.addEventListener("click", () => {
+    const isOpen1 = list1.classList.toggle("open");
+    btn1.setAttribute("aria-expanded", isOpen1);
+    btn1.textContent = isOpen1 ? "Hide" : "Subjects";
+});
+
+
+
+
+const btn2 = document.querySelector("#services-toggle-instr");
+const list2 = document.querySelector("#services-list-instr");
+
+btn2.addEventListener("click", () => {
+    const isOpen2 = list2.classList.toggle("open");
+    btn2.setAttribute("aria-expanded", isOpen2);
+    btn2.textContent = isOpen2 ? "Hide" : "Instruction";
+});
+
+
+
+const btn3 = document.querySelector("#services-toggle-college-prep");
+const list3 = document.querySelector("#services-list-college-prep");
+
+btn3.addEventListener("click", () => {
+    const isOpen3 = list3.classList.toggle("open");
+    btn3.setAttribute("aria-expanded", isOpen3);
+    btn3.textContent = isOpen3 ? "Hide" : "College Prep";
+});
+*/
+
+const smallServicesButton = document.querySelector("#nontrad-learn");
+const nonstandardTiers = document.querySelector("#pricing-tiers-nonstandard");
+
+if (smallServicesButton && nonstandardTiers) {
+  smallServicesButton.addEventListener("click", () => {
+    const isOpen = nonstandardTiers.classList.toggle("open");
+    smallServicesButton.setAttribute("aria-expanded", isOpen);
+    smallServicesButton.textContent = isOpen ? "Hide Small Services" : "Small Services";
+  });
+}
+
+
+document.querySelectorAll(".toggle-btn").forEach(button => {
+	const content = document.getElementById(button.getAttribute("aria-controls"));
+	const defaultText = button.textContent.trim();
+
+	button.addEventListener("click", function () {
+		const isOpen = button.getAttribute("aria-expanded") === "true";
+
+		button.setAttribute("aria-expanded", String(!isOpen));
+
+		if (isOpen) {
+			content.classList.remove("open");
+			content.hidden = true;
+			button.textContent = defaultText;
+		} else {
+			content.classList.add("open");
+			content.hidden = false;
+			button.textContent = "Show Less";
+		}
+	});
+});

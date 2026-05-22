@@ -797,7 +797,6 @@ hr {
 }
 
 .finance-card {
-  box-sizing: border-box;
   background: #f8f8fb;
   border: 2px solid #d9dce8;
   border-radius: 14px;
@@ -940,76 +939,11 @@ hr {
   border: 0;
 }
 
-#resources {
-  margin-left: 0rem;
-  margin-right: 0rem;
-}
-
-/* Resources social media card */
-.social-feed-card {
-  --instagram-card-width: 326px;
-  --instagram-card-max-height: 430px;
-
-  overflow: hidden;
-}
-
-.resource-instagram-wrapper {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  max-height: var(--instagram-card-max-height);
-  margin: 1rem auto;
-  overflow: hidden;
-}
-
-.resource-instagram-wrapper blockquote.instagram-media {
-  width: 100% !important;
-  min-width: 250px !important;
-  max-width: var(--instagram-card-width) !important;
-  margin: 0 auto !important;
-}
-
-.resource-social-link {
-  display: inline-block;
-  margin-top: 0.5rem;
-  padding: 0.65rem 1rem;
-  border-radius: 999px;
-  background: #0f1765;
-  color: #ffffff !important;
-  text-decoration: none;
-  font-weight: 600;
-  transition: transform 0.14s ease,
-              background-color 0.14s ease;
-}
-
-.resource-social-link:hover,
-.resource-social-link:focus {
-  transform: scale(1.03);
-  background: #910101;
-}
-
 /* tablet / desktop */
 @media (min-width: 680px) {
   #scholarship-content {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    grid-template-areas:
-      "scholarships savings"
-      "social       savings";
+    grid-template-columns: repeat(2, 1fr);
     align-items: start;
-  }
-
-  .scholarship-card {
-    grid-area: scholarships;
-  }
-
-  .education-savings-card {
-    grid-area: savings;
-  }
-
-  .social-feed-card {
-    grid-area: social;
-    --instagram-card-width: 320px;
-    --instagram-card-max-height: 380px;
   }
 
   .finance-card,
@@ -1027,13 +961,6 @@ hr {
   #open529Link {
     width: auto;
     min-width: 150px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .social-feed-card {
-    --instagram-card-width: 360px;
-    --instagram-card-max-height: 430px;
   }
 }
 
@@ -1242,3 +1169,88 @@ hr {
   }
 }
 
+
+
+
+
+
+
+/* -----------------------------
+   Social Media / Instagram Post
+------------------------------ */
+
+/* -----------------------------
+   Resources: Instagram Feed Card
+------------------------------ */
+
+.resource-social-feed {
+	--instagram-feed-width: 10px;
+	--instagram-feed-max-height: auto;
+
+	display: flex;
+  flex-direction: column;
+	/*grid-template-columns: 1fr;*/
+	gap: 1.5rem;
+	align-items: center;
+	margin-top: 2rem;
+	padding: 1.25rem;
+	background: #ffffff;
+	border-radius: 1rem;
+	box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
+}
+
+.resource-social-copy {
+	text-align: center;
+}
+
+.resource-social-copy h4 {
+	margin-bottom: 0.75rem;
+	color: #0f1765;
+}
+
+.resource-social-copy p {
+	margin-bottom: 1rem;
+	line-height: 1.6;
+}
+
+.resource-social-link {
+	display: inline-block;
+	padding: 0.65rem 1rem;
+	border-radius: 999px;
+	background: #0f1765;
+	color: #ffffff;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.resource-social-link:hover,
+.resource-social-link:focus {
+	background: #910101;
+	color: #ffffff;
+}
+
+.resource-instagram-wrapper {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	max-height: var(--instagram-feed-max-height);
+	overflow: hidden;
+}
+
+.resource-instagram-wrapper blockquote.instagram-media {
+	width: 100% !important;
+	min-width: 260px !important;
+	max-width: var(--instagram-feed-width) !important;
+	margin: 0 auto !important;
+}
+
+/* Larger screens */
+@media screen and (min-width: 850px) {
+	.resource-social-feed {
+		grid-template-columns: 1fr auto;
+	}
+
+	.resource-social-copy {
+		text-align: left;
+	}
+}
